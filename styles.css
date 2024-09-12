@@ -80,9 +80,9 @@ h1{ /* title */
 	pointer-events: none;
 }
 
-.red{background-color:#f10e00;}
-.green{background-color:#7cc303;}
-.blue{background-color:#4d71d1;}
+.red{background-color:rgb(241,11,0);}
+.green{background-color:rgb(124,195,3);}
+.blue{background-color:rgb(77,113,209);}
 
 #landscape-wrapper{
      position:absolute;
