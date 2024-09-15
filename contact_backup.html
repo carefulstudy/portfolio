@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Psi Freak</title>
+</head>
+
+<body>
+	<div id="landscape-wrapper">
+		<!--
+		site header
+		-->
+		<header>
+			<div id="header-container">
+				<!--company logo-->
+				<div id="logo-wrapper">
+					<a href="http://www.rforrobin.com/">
+						<img src="placeholder-images/r_for_robin.png" alt="image">
+					</a>
+				</div>
+				
+				<!--site title-->
+				<div id="title-wrapper">
+					<h1>THE OFFICIAL PSI FREAK WEBSITE!</h1>
+				</div>
+				
+				<!--site navigation menu-->
+				<div id="nav-menu-wrapper">
+					<div id="nav-menu">
+						<a href="index.html">HOME</a>
+						&nbsp|&nbsp 
+						<a href="https://www.patreon.com/rforrobin">PATREON</a>
+						&nbsp|&nbsp 
+						<a href="contact.html">CONTACT</a>
+						&nbsp|&nbsp 
+						<a href="faq.html">FAQ</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<!--
+		Upper content container
+		-->
+		<div id="upper-content-container">
+			<div class="manual-left">
+				<table cellpadding="0" cellspacing="0" border="0">
+				  <tbody>
+					<tr>
+						<td>
+						<br>
+							<h1>Contact</h1>
+						</td>
+					</tr>
+				  </tbody>
+				</table>
+				
+
+<div class="container">
+
+	<h2>Got Questions? Big or Small, I'm Here!</h2>
+	<p>
+Whether you have a teeny-tiny question or a BIG one, feel free to reach out! We might not know the answer (yet!), but we'll do our best to help. It’s all very exciting, isn't it? Send your questions, comments, or just say hello! Just email us at the address below!
+	</p>
+
+    <div id="asd">
+	<p id="MyHeading">Click to copy:</p>
+	<input class="copythis" type="text" value="mail@psifreak.com" id="myInput">
+	<a><button id="MyButton" class="copythis-btn" onclick="myFunction()">mail@psifreak.com</button></a>
+	</div>
+</div>
+
+</form>
+				<table cellpadding="0" cellspacing="0" border="0">
+					<tbody>
+						<tr><td><a href="index.html" class="return-to-home-page"><p class="return-to-home-page">< Return to home page.</p></a></td></tr>
+					</tbody>
+				</table>
+			</div>
+			<!--
+			RIGHT SIDE
+			-->
+			<div class="manual-right">
+				<div class = "manual-right-wrapper">
+					<img src="placeholder-images/psi-freak-clean.gif" alt="image">
+				</div>
+				<div class="manual-right"></div>
+			</div>
+		</div>
+
+		<!--
+		site footer
+		-->
+		<footer>
+			<div class="legal">
+				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved.</p>
+				<p>PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<b><a class="a-legal-yellow" href="http://www.google.com/">Privacy Policy</a></b></p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+<!-- Required for hCaptcha -->
+<script>
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+   // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+}
+</script>
+
+
+<script>
+    //Select button by id
+    const MyButton = document.getElementById('MyButton');
+    //Add on click listener for button
+    MyButton.addEventListener('click', function() {
+        //Select (h1) heading by id, and then change it's value to (bananas)
+        document.getElementById('MyHeading').innerText = "Text copied!"
+    })
+</script>
