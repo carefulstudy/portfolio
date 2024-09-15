@@ -449,14 +449,12 @@ a{
     display:table-header-group;
 	width:29%;
 	padding-left:1%;
-	margin-bottom: 5%;
 }
 .col-r-img{
 	float:right;
     display:table-footer-group;
 	width:29%;
 	padding-right:1%;
-	margin-bottom: 5%;
 }
 
 .col-l-img p,.col-r-img p{
