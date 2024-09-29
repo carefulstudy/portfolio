@@ -12,7 +12,7 @@ body{
 	margin-insubtitle_line_-start: 0;
 	margin-insubtitle_line_-end: 0;
 	display:block;
-	background-size: 8vw;
+	background-size: 8vh;
 }
 img{
 	display: block;
@@ -185,13 +185,13 @@ hr {
 	aspect-ratio: 1/1;
 }
 #large-question-mark h1{
-	font-size: 10vw;
+	font-size: 10vh;
 }
 
 
 /* Return to home page */
 #return-to-home-page {
-	padding: 1vw 0vw;
+	padding: 1vh 0vh;
 }
 
 #return-to-home-page p, #return-to-home-page a{color: #D3D3D3;}
@@ -200,7 +200,7 @@ hr {
 footer{
 	position:relative;
 	width:100%;
-	height:7.5%;
+	height:10vh;
 	left: 50%;
 	transform: translate(-50%, 0%);
 	margin: 0 auto;
@@ -302,8 +302,8 @@ footer p{
 	FONT-SIZE:1.5vh;
 }
 
-.manual-img-r p{padding:0;margin:0.5vw;color:yellow;}
-.manual-img-l p{padding:0;margin:0.5vw;color:yellow;}
+.manual-img-r p{padding:0;margin:0.5vh;color:yellow;}
+.manual-img-l p{padding:0;margin:0.5vh;color:yellow;}
 
 /******************/
 /* Downloads page */
@@ -379,20 +379,20 @@ a{
 /* copy this classes */
 /*********************/
 .copythis-btn {
-	margin: 1vw 0vw;
+	margin: 1vh 0vh;
 	background-color: blue;
 	border: none;
 	color: white;
-	padding: 3vw 3vw;
+	padding: 3vh 3vh;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 6vw;
+	font-size: 6vh;
 }
 
 #copy-this-wrapper{
-	margin-top:5vw;
-	margin-bottom:2vw;
+	margin-top:5vh;
+	margin-bottom:2vh;
 }
 
 #copy-this-input{display:none;}
@@ -400,10 +400,10 @@ a{
 #copy-this-button{
 	position:relative;
 	left:.9vh;
-	margin:.5vw 0vw;
+	margin:.5vh 0vw;
 	background-color: blue; /* Green */
 	border: none;
-	padding: 1vw;
+	padding: 1vh;
 	display: inline-block;
 	color: white;
 	text-align: center;
