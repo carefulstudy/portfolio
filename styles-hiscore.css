@@ -148,4 +148,10 @@
 		line-height: 4vw;
 		color: white;
 	}
+	
+	
+.ranking-container {
+	border-radius: 4vw;
+	border: 4vw solid white;
+}
 }
