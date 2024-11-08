@@ -2,9 +2,9 @@
     background-color: #c0c0c0; 
     color: #000080; 
     font-family: "Tahoma", sans-serif;
-    font-size: 14px;
-    padding: 8px;
-    border: 2px solid #808080; 
+    font-size: 7vw;
+    padding: 4vw;
+    border: 1vh solid #808080; 
     border-top-color: #ffffff;
     border-left-color: #ffffff;
     border-right-color: #404040;
@@ -19,7 +19,7 @@
 }
 
 .win98-bar .icon {
-    margin-right: 8px;
+    margin-right: 4vw;
 }
 
 @media screen and (orientation:portrait)
