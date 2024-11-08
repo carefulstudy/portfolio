@@ -1,195 +1,113 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="styles-hamburger-menu.css">
+	<script src="scripts/hamburger-menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
 </head>
 
 <body>
-	<!-- 
-	Hamburger Menu
-	-->
-	<div id="hamburger-menu-wrapper">
-		<button onclick="showMenu()" class="hamburger-btn">☰</button>
-
-		<div id="hamburger-menu" class="hamburger-content">
-			<a href="https://www.psifreak.com">HOME</a>
-			<a href="https://www.patreon.com/rforrobin/creators">PATREON</a>
-			<a href="https://www.psifreak.com/faq">FAQ</a>
-			<a href="https://www.psifreak.com/contact">CONTACT</a>
-		</div>
-	</div>
+	<div id="designed-for-desktop"><span>This site works best on desktop.</span></div>
+	
+    <div id="hamburger-menu-jquery"></div>
+    <script>
+        $(document).ready(function() {
+            $('#hamburger-menu-jquery').load('hamburger-menu.html');
+        });
+    </script>
 		
-	<!-- Main Wrapper -->
 	<div id="page-wrapper">
-		<!-- Landscape Header -->
-		<header id="header-landscape-mode"> 
-			<div id="header-container">
-				<!--Company Logo-->
-				<div id="logo-wrapper">
-					<a href="http://www.rforrobin.com/"><img src="images/r_for_robin.png" alt="image"></a>
-				</div>
+	
+		<header id="landscape-mode"> 
+			<div id="container">
+				<a href="http://www.rforrobin.com/" id="company-logo-wrapper">
+					<img src="images/r_for_robin.png">
+				</a>
 				
-				<!--Site Title-->
 				<div id="page-title-wrapper">
-					<h1>THE OFFICIAL PSI FREAK WEBSITE!</h1>
+					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
 				</div>
 				
-				<!--Site Navigation Menu-->
 				<div id="nav-menu-wrapper">
 					<div id="nav-menu">
-						<a href="index.html">HOME</a>
+						<a href="index.html">INDEX</a>
 						&nbsp|&nbsp 
-						<a href="https://www.patreon.com/rforrobin">PATREON</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
+						<a href="site-map.html">SITE MAP</a>
 						&nbsp|&nbsp 
 						<a href="faq.html">FAQ</a>
+						&nbsp|&nbsp 
+						<a href="contact.html">CONTACT</a>
 					</div>
 				</div>
-			</div>
-		</header>
+			</div><!--header-container-->
+		</header><!--landscape-mode-->
 		
-		<!-- Portrait Header -->
-		<header id="header-portrait-mode">
-			<div id="logo-wrapper">
-				<a href="news.html"><img src="images/r_for_robin.png" alt="image"></a>
+		<header id="portrait-mode">
+			<div id="company-logo-wrapper">
+				<a href="news.html"><img src="images/r_for_robin.png"></a>
 			</div>
-			
 			<div id="page-title-wrapper">
 				<a href="news.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
 			</div>
-			
 			<div id="hamburger-placeholder"></div>
-		</header>
+		</header><!--portrait-mode-->
 		
-		<!-- Upper Content Container -->
-		<div id="content-container">
-			<!-- Left Side -->
-			<div class="content-container-left">
-				<table cellpadding="0" cellspacing="0" border="0">
-				  <tbody>
-					<tr>
-						<td>
-						<br>
-							<h1>Psi Freak FAQs</h1>
-						</td>
-					</tr>
-				  </tbody>
-				</table>
-				
-				<!--
-				-- Game Downloads 
-				-->
-							
-								
-				<table cellpadding="0" cellspacing="0" border="0">
-					<h2>Can someone tell me what Psi Freak is?</h2>
-					<p>
-						Well, a Psi Freak is a super cool name for someone who has special powers called psionics!
+		<div class="table-container">
+		
+			<div class="table-body-left">
+			
+				<div class="table-row">
+					<h1>Psi Freak FAQs</h1>
+					<h2>Can someone tell me what a Psi Freak is?</h2>
+					<p>Well, a Psi Freak is a super cool name for someone who has special powers called psionics!
 						There are more than 8 different types of psionics,
 						and each type can control something awesome,
 						like heat, sound, or moisture.
-						These amazing people are the stars of the game!
-					</p>
-				</table>
+						These amazing people are the stars of the game!</p>
 					
-				<table cellpadding="0" cellspacing="0" border="0">
-					<h2>Why are some places in the world closed off or fenced in?</h2>
-					<p>
-						The game has only been worked on in a small, local setting by the developer for three years.
-						This means Psifreak has not been tested in an online setting.
-						To make sure everything works well,
-						I’ll slowly add new parts to the game one at a time.
-						This helps me fix any problems and make each part really great before adding more.
-					</p>
-				</table>
-								
-				<table cellpadding="0" cellspacing="0" border="0">
+					<h2>Why can't I explore beyond certain areas?</h2>
+					<p>Some areas in Psi Freak are still fenced off, and here’s why: the game was developed locally over three years, but it hasn’t yet been fully tested online. To make sure everything runs smoothly, we’re opening up new areas one at a time. This way, we can catch and fix any issues, making sure each part is solid before expanding. Thanks for being patient as we build this world together!</p>
+					
 					<h2>Is it for kids, grown-ups, or both?</h2>
-					<p>
-					Psifreak is rated "E for Everyone,"
-					which means it’s great for kids aged 6 and up.
-					The game involves playful fights using items like yo-yos and water balloons,
-					and even use cool powers like telekinesis,
-					ensuring a kid-friendly and entertaining experience.
-					</p>
-				</table>
-				
-				<table cellpadding="0" cellspacing="0" border="0">
-					<h2>Can you spend real money in Psi Freak?</h2>
-					<p>
-					No, Psi Freak is all about honing your powers, not throwing money at them.
-					I want to ensure the experience is fair and fun for everyone.
-					No shortcuts through spending.
-					I'm focused on creating a complete game without additional purchases to bog down the experience.
-					</p>
-					<br>
-				</table>
-				
-				<table cellpadding="0" cellspacing="0" border="0">
-					<h2>Will Psi Freak be available on systems apart from Windows?</h2>
-					<p>
-					Right now, Psi Freak will only be available on Windows computers.
-					I want to make it available on other consoles like Nintendo Switch,
-					but the core technology is being significantly updated, and maintaining multiple platforms would take too much time.
-					I'll revisit it in the future!
-					</p>
-				</table>
-				
-				<table cellpadding="0" cellspacing="0" border="0">
+					<p>Psifreak is rated 'E for Everyone,' making it suitable for players aged 6 and up. The game features engaging, playful battles utilizing items such as yo-yos and frisbees, alongside the exciting abilities of psionics. This ensures a delightful and family-friendly experience in a vibrant, imaginative world.</p>
+					
+					<h2>Is it possible to use real money for extras?</h2>
+					<p>No, Psi Freak is dedicated to fostering a fair and enjoyable environment for all players. The game is designed with the principle that players deserve the best experience without the pressure of in-game purchases. I believe in treating the player base with respect, ensuring that everyone can hone their skills and enjoy the game without shortcuts or financial barriers.</p>
+					
+					<h2>Can I play Psi Freak on systems other than Windows?</h2>
+					<p>Currently, Psi Freak is exclusively available on Windows computers. I’m focusing on refining the core technology for the game, and while there may be opportunities to expand to other platforms in the future, for now, Windows users will have the best experience!</p>
+					
 					<h2>Will Psi Freak be available on Steam?</h2>
-					<p>
-					Right now, Psi Freak is only available on itch.io.
-					I'm choosing to stick with itch.io because it gives me complete control over the game.
-					This way, I can create the game just the way we want it.
-					So, for now, it’s staying on itch.io.
-					</p>
-					<br>
-				</table>
+					<p>Currently, Psi Freak is only available on itch.io, a platform I appreciate for its support of indie developers and direct connection with players. While Steam has its merits, I feel that itch.io allows for a more personalized and authentic experience. For now, I’m grateful to stay with itch.io, where we can work together to create something special.</p>
+					
+					<h2>Doesn’t $100 seem a bit much for a game?</h2>
+					<p>The $100 price tag helps deter bad actors and ensures a committed player community. Psi Freak is free for anyone who follows the human verification steps mentioned earlier, like sharing original drawings or mentioning Psi Freak in a video. Even if you don’t support financially, I’m grateful you’re playing! Just imagine what this game could become in 50 years! Let’s embark on this journey together</p>
+					
+					<h2>Where can I find more about Psi Freak?</h2>
+					<p>To explore more about Psi Freak, follow PsiChamp on Twitter and our official Instagram. Stay updated with the latest news, behind-the-scenes insights, and exclusive content. Don't miss your chance to connect with the Psi Freak community!</p>
+				</div><!--table-row-->
 				
-				<table cellpadding="0" cellspacing="0" border="0">
-					<h2>Where can I get more of Psi Freak?</h2>
-					<p>
-						If you're looking to dive deeper into the world of Psi Freak,
-						you’ll definitely want to check out Psi Freak's Instagram page!
-						There you will find the latest news, behind-the-scenes peeks, and cool updates.
-						Just hit that follow button to stay in the loop and never miss out on the action!
-						You might even catch some exclusive content or sneak previews—perfect for any super-fan like you!
-					</p>
-				</table>
+				<div class="table-row">
+					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
+				</div><!--table-row-->
 				
-				<!-- RIGHT SIDE (LANDSCAPE ONLY!) -->
-				<table cellpadding="0" cellspacing="0" border="0">
-					<tbody>
-						<tr><td  id="return-to-home-page"><a href="index.html"><p "return-to-home-page">< Return to home page.</p></a></td></tr>
-					</tbody>
-				</table>
-			</div>
+			</div><!--table-body-left-->
 			
-			<!-- RIGHT SIDE (LANDSCAPE ONLY!) -->
-			<div class="content-container-right">
-				<div class = "psi-freak-wrapper">
-					<img src="images/psi-freak-clean.gif" alt="image">
+			<div class="table-body-right">
+				<div div="psi-freak-wrapper">
+					<img src="images/psi-freak-clean.gif">
 				</div>
-				<div class="manual-right"></div>
-			</div>
-		</div>
+			</div><!--table-body-right-->
+			
+		</div><!--table-container-->
 		
-		<!--
-		Lower content box
-		-->
-
-		<!--
-		site footer
-		-->
 		<footer>
 			<div class="legal">
-				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved.</p>
-				<p>PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<b><a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a></b></p>
-			</div>
+				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved. PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a>, <a href="serial-key-usage-policy.html">Serial Key Usage Policy</p></a>
+			</div><!--legal-->
 		</footer>
-	</div>
+		
+	</div><!--page-wrapper-->
 </body>

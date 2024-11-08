@@ -1,0 +1,88 @@
+
+@media screen and (orientation:portrait)
+{
+	.hamburger-btn {  /* hamburger-btn is of type "button", hence the "." */
+		width:16vw;
+		height:16vw;
+		margin:2vw;
+		padding:16px;
+		
+		border: none;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		border-radius: 50%;
+		font-size:9vw;
+		line-height:8vw;
+		text-align: center;
+		vertical-align: middle;
+		padding:0;
+		
+		
+		font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		
+		/* 3D Effect */
+		
+		/* Positioning */
+		z-index: 1000;
+		
+		
+		
+		
+		
+		
+		
+		background-color: #003399; 
+		color:white;
+		font-weight:2000;
+		font-weight: 200; /* Extra Light */
+		font-weight: 300; /* Light */
+		font-weight: 400; /* Normal (Regular) */
+		font-weight: 500; /* Medium */
+		font-weight: 600; /* Semi Bold */
+		font-weight: 700; /* Bold */
+		font-weight: 800; /* Extra Bold */
+		font-weight: 900; /* Black */
+	}
+
+	#hamburger-menu-wrapper {
+		margin-top:9vw;
+		float:right;
+		z-index:200;
+		position: absolute;
+		right:0vw;
+		top:0vw;
+	}
+
+	.hamburger-content {
+		display: none;
+		position: absolute;
+		background-color: #040707;
+		width: 40vw;
+		overflow: auto;
+		z-index: 1;
+		right:0.00vw;
+		background-color: #003399; 
+		color: #FFFFFF; 
+		border-radius: 10%;
+		
+	}
+
+	.hamburger-content a {
+		color: white;
+		padding: 2vw 3vw;
+		text-decoration: none;
+		display: block;
+		font-size:4vw;
+		font-family:verdana;
+		font-weight: 550;  
+	}
+
+	.hamburger a:hover {background-color: #ddd;}
+
+	.show {display: block;}
+}

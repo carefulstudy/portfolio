@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles-hamburger-menu.css">
+	<script src="scripts/hamburger-menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<title>The Official Psi Freak Website</title>
+</head>
+
+<body>
+	<div id="designed-for-desktop"><span>This site works best on desktop.</span></div>
+	
+    <div id="hamburger-menu-jquery"></div>
+    <script>
+        $(document).ready(function() {
+            $('#hamburger-menu-jquery').load('hamburger-menu.html');
+        });
+    </script>
+		
+	<div id="page-wrapper">
+	
+		<header id="landscape-mode"> 
+			<div id="container">
+				<a href="http://www.rforrobin.com/" id="company-logo-wrapper">
+					<img src="images/r_for_robin.png">
+				</a>
+				
+				<div id="page-title-wrapper">
+					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
+				</div>
+				
+				<div id="nav-menu-wrapper">
+					<div id="nav-menu">
+						<a href="index.html">INDEX</a>
+						&nbsp|&nbsp 
+						<a href="site-map.html">SITE MAP</a>
+						&nbsp|&nbsp 
+						<a href="faq.html">FAQ</a>
+						&nbsp|&nbsp 
+						<a href="contact.html">CONTACT</a>
+					</div>
+				</div>
+			</div><!--header-container-->
+		</header><!--landscape-mode-->
+		
+		<header id="portrait-mode">
+			<div id="company-logo-wrapper">
+				<a href="news.html"><img src="images/r_for_robin.png"></a>
+			</div>
+			<div id="page-title-wrapper">
+				<a href="news.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
+			</div>
+			<div id="hamburger-placeholder"></div>
+		</header><!--portrait-mode-->
+		
+		<div class="table-container">
+		
+			<div class="table-body-left">
+			
+				<div class="table-row">
+					<h1>Gamepad Troubleshooting Manual</h1>
+					<h2>Gamepad Troubles? You've come to the right place!</h2>
+					<p>I understand how crucial it is for you to enjoy the game with your favorite gamepad, and want to ensure that you can play comfortably.<br><br>
+					To assist you, I’ve made it simple to resolve any gamepad issues you might encounter.<br><br>
+					Start by heading over to the <a href="downloads.html">downloads page</a> to check if your gamepad is listed under 'Gamepad Profiles.' If you find it, you can skip the rest and simply download the profile and place it in your installation folder.</p>
+				</div><!--table-->
+								
+				<div class="table-row">
+					<div class="table-data-r-txt">
+						<p><span class="p-header">Can't Find Your Gamepad? We’re Here to Help!</span><br>
+						If your gamepad isn't listed, don’t worry! I know how frustrating it can be when your favorite controller is acting funny. There’s a straightforward way to create a custom mapping for it, and I'm here to guide you through the process.<br><br>
+						We’ll use a simple tool called the <b>SDL2 Gamepad Tool</b> to help you sort everything out in just a few minutes. This setup is designed to be easy, Psi Freak accepts SDL2 controller profiles. Let’s work together to make your gaming experience smooth and enjoyable!</p>
+					</div>
+					<div class="table-data-l-img">
+						<img src="images/errors.png">
+					</div>
+				</div><!--table-->
+				
+				<div class="table-row">
+					<div class="col-r-txt col-txt">
+						<p>1. Create a new .txt file on your desktop (We need file this later!).</p>
+						<p>&nbsp</p>
+						<p>2. Head over to <a href="https://generalarcade.com/gamepadtool/">General Arcade's Gamepad Tool download page</a> and download <b>SDL2 Gamepad Tool</b> (Windows archive, approximately 25MB).</p>
+						<p>&nbsp</p>
+						<p>3. Extract the contents anywhere.</p>
+						<p>&nbsp</p>
+						<p>4. Locate <b>gamepad-tool.exe</b> and launch the application.</p>
+						<p>&nbsp</p>
+						<p>5. Inside the application, Click on "Create A New Mapping." </p>
+						<p>&nbsp</p>
+						<p>6. Follow the prompts to map your controller, pressing the corresponding buttons. </p>
+						<p>&nbsp</p>
+						<p>7. Once you’ve completed mapping, click "Copy Mapping String."</p>
+						<p>&nbsp</p>
+						<p>8. Paste the copied mapping into your .txt file.</p>
+						<p>&nbsp</p>
+						<p>9. Name the .txt file "my-gamepad-profile.txt".</p>
+						<p>&nbsp</p>
+						<p>10. <b>Cut</b> "my-gamepad-profile.txt" from your desktop and <b>paste</b> it inside your installation folder.</p>
+						<p>&nbsp</p>
+						<p>You’ve just created a gamepad profile, and your gamepad should work like a charm!</p>
+					</div>
+				</div><!--table-row-->
+				
+				<div class="table-row">
+					<div id="return-to-home-page"><a href="index.html"><p>< Return to game manuals.</p></a></div> 
+				</div><!--table-row-->
+				
+			</div><!--table-body-left-->
+			
+			<div class="table-body-right">
+				<div div="psi-freak-wrapper">
+					<img src="images/psi-freak-clean.gif">
+				</div>
+			</div><!--table-body-right-->
+			
+		</div><!--table-container-->
+		
+		<footer>
+			<div class="legal">
+				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved. PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a>, <a href="serial-key-usage-policy.html">Serial Key Usage Policy</p></a>
+			</div><!--legal-->
+		</footer>
+		
+	</div><!--page-wrapper-->
+</body>

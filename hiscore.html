@@ -1,109 +1,84 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<link rel="stylesheet" href="styles.css">
-	<script src="scripts.js"></script>
+	<link rel="stylesheet" href="styles-hamburger-menu.css">
+	<script src="scripts/hamburger-menu.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
 </head>
 
 <body>
-	<!-- 
-	Hamburger Menu
-	-->
-	<div id="hamburger-menu-wrapper">
-		<button onclick="showMenu()" class="hamburger-btn">☰</button>
-
-		<div id="hamburger-menu" class="hamburger-content">
-			<a href="https://www.psifreak.com">HOME</a>
-			<a href="https://www.patreon.com/rforrobin/creators">PATREON</a>
-			<a href="https://www.psifreak.com/faq">FAQ</a>
-			<a href="https://www.psifreak.com/contact">CONTACT</a>
-		</div>
-	</div>
+	<div id="designed-for-desktop"><span>This site works best on desktop.</span></div>
+	
+    <div id="hamburger-menu-jquery"></div>
+    <script>
+        $(document).ready(function() {
+            $('#hamburger-menu-jquery').load('hamburger-menu.html');
+        });
+    </script>
 		
-	<!-- Main Wrapper -->
 	<div id="page-wrapper">
-		<!-- Landscape Header -->
-		<header id="header-landscape-mode"> 
-			<div id="header-container">
-				<!--Company Logo-->
-				<div id="logo-wrapper">
-					<a href="http://www.rforrobin.com/"><img src="images/r_for_robin.png" alt="image"></a>
-				</div>
+	
+		<header id="landscape-mode"> 
+			<div id="container">
+				<a href="http://www.rforrobin.com/" id="company-logo-wrapper">
+					<img src="images/r_for_robin.png">
+				</a>
 				
-				<!--Site Title-->
 				<div id="page-title-wrapper">
-					<h1>THE OFFICIAL PSI FREAK WEBSITE!</h1>
+					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
 				</div>
 				
-				<!--Site Navigation Menu-->
 				<div id="nav-menu-wrapper">
 					<div id="nav-menu">
-						<a href="index.html">HOME</a>
+						<a href="index.html">INDEX</a>
 						&nbsp|&nbsp 
-						<a href="https://www.patreon.com/rforrobin">PATREON</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
+						<a href="site-map.html">SITE MAP</a>
 						&nbsp|&nbsp 
 						<a href="faq.html">FAQ</a>
+						&nbsp|&nbsp 
+						<a href="contact.html">CONTACT</a>
 					</div>
 				</div>
-			</div>
-		</header>
+			</div><!--header-container-->
+		</header><!--landscape-mode-->
 		
-		<!-- Portrait Header -->
-		<header id="header-portrait-mode">
-			<div id="logo-wrapper">
-				<a href="news.html"><img src="images/r_for_robin.png" alt="image"></a>
+		<header id="portrait-mode">
+			<div id="company-logo-wrapper">
+				<a href="news.html"><img src="images/r_for_robin.png"></a>
 			</div>
-			
 			<div id="page-title-wrapper">
 				<a href="news.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
 			</div>
-			
 			<div id="hamburger-placeholder"></div>
-		</header>
+		</header><!--portrait-mode-->
 		
-		<!-- Upper Content Container -->
-		<div id="content-container">
-			<!-- Left Side -->
-			<div class="content-container-left no-grid">
+		<div class="table-container">
+		
+			<div class="table-body-left">
 			
-							<div id="large-question-mark"><h1>☊⍜⌿⊬</h1></div>
-				<!--
-				-- Game Downloads 
-				-->
-							
-				<!-- RIGHT SIDE (LANDSCAPE ONLY!) -->
-				<table cellpadding="0" cellspacing="0" border="0" class="absolute">
-					<tbody>
-						<tr><td  id="return-to-home-page" ><a href="index.html"><p "return-to-home-page">< Return to home page.</p></a></td></tr>
-					</tbody>
-				</table>
-			</div>
+				<div id="large-question-mark"><h1>☊⍜⌿⊬</h1><p style="color:#FFFF00">(Coming soon)</p></div>
+				
+				<div class="table-row">
+					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
+				</div><!--table-row-->
+				
+			</div><!--table-body-left-->
 			
-			<!-- RIGHT SIDE (LANDSCAPE ONLY!) -->
-			<div class="content-container-right">
-				<div class = "psi-freak-wrapper">
-					<img src="images/psi-freak-clean.gif" alt="image">
+			<div class="table-body-right">
+				<div div="psi-freak-wrapper">
+					<img src="images/psi-freak-clean.gif">
 				</div>
-				<div class="manual-right"></div>
-			</div>
-		</div>
+			</div><!--table-body-right-->
+			
+		</div><!--table-container-->
 		
-		<!--
-		Lower content box
-		-->
-	
-		<!--
-		site footer
-		-->
 		<footer>
 			<div class="legal">
-				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved.</p>
-				<p>PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<b><a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a></b></p>
-			</div>
+				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved. PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a>, <a href="serial-key-usage-policy.html">Serial Key Usage Policy</p></a>
+			</div><!--legal-->
 		</footer>
-	</div>
+		
+	</div><!--page-wrapper-->
 </body>
