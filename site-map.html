@@ -2,20 +2,36 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles-index.css">
+	<link rel="stylesheet" href="styles-hiscore.css">
 	<link rel="stylesheet" href="styles-site-map.css">
-	<link rel="stylesheet" href="styles-hamburger-menu.css">
+	<link rel="stylesheet" href="modules/styles-hamburger-menu.css">
+	<link rel="stylesheet" href="modules/styles-notification-bar.css">
 	<script src="scripts/hamburger-menu.js"></script>
+	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
 </head>
 
 <body>
-	<div id="designed-for-desktop"><span>This site works best on desktop.</span></div>
-	
-    <div id="hamburger-menu-jquery"></div>
+	<div id="notification-bar-placeholder"></div>
     <script>
         $(document).ready(function() {
-            $('#hamburger-menu-jquery').load('hamburger-menu.html');
+            $('#notification-bar-placeholder').load('modules/notification-bar.html');
+        });
+    </script>
+	
+    <div id="designed-for-desktop-placeholder"></div>
+    <script>
+        $(document).ready(function() {
+            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
+        });
+    </script>
+	
+    <div id="hamburger-menu-placeholder"></div>
+    <script>
+        $(document).ready(function() {
+            $('#hamburger-menu-placeholder').load('modules/hamburger-menu.html');
         });
     </script>
 		
