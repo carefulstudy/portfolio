@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles-hiscore.css">
 	<link rel="stylesheet" href="styles-hamburger-menu.css">
 	<script src="scripts/hamburger-menu.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -58,7 +59,55 @@
 		
 			<div class="table-body-left">
 			
-				<div id="large-question-mark"><h1>☊⍜⌿⊬</h1><p style="color:#FFFF00">(Coming soon)</p></div>
+				<div class="table-row">
+					<h2>Hiscores (Hiscores are coming—don’t miss it!)</h2>
+				</div><!--table-row-->
+				<div class="table-row">
+					<p>Who’s at the top of the leaderboard? Find out who’s scoring big and leaving everyone in the dust!</p>
+				</div><!--table-row-->
+				
+				<div class="table-row"><hr></div>
+				
+				<div class="table-row">
+					<div class="hiscore-container">
+						<div class="links-section">
+							<div class="link">
+								<a href="hiscore.html"><p>Sum</p></a>
+							</div>
+							<div class="link">
+								<a href="hiscore-xp.html"><p>XP</p></a>
+							</div>
+							<div class="link">
+								<a href="hiscore-money.html"><p>Money</p></a>
+							</div>
+							<div class="link">
+								<a href="hiscore-bouts.html"><p>Bouts</p></a>
+							</div>
+							<div class="link">
+								<a href="hiscore-trivia.html"><p>Trivia</p></a>
+							</div>
+						</div>
+						
+						<div class="ranking-container">
+							<div class="ranking-row header score">
+							  <div class="ranking-column">Rank</div>
+							  <div class="ranking-column">Name</div>
+							  <div class="ranking-column">Score</div>
+							</div>
+							<div id="player-score-placeholder"></div>
+							<script>
+								$(document).ready(function() {
+									$('#player-score-placeholder').load('player-hiscore/score.html');
+								});
+							</script>
+						</div>				
+					</div>				
+				</div><!--table-row-->
+				
+				<div class="table-row"><hr></div>
+				<div class="table-row">
+					<p>Please note that these <b>rankings are updated on a weekly basis</b>. Be sure to check back regularly to see how the standings evolve and who’s currently at the top. The competition is fierce, and every week brings new opportunities to climb the leaderboard and make your mark!</p>
+				</div><!--table-row-->
 				
 				<div class="table-row">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
