@@ -3,6 +3,11 @@
   margin:auto;
 }
 
+.hiscore-container{
+    display: flex;  
+    gap: 10px;  
+}
+
 .links-section{
 	width:12vh;
 	font-size:12vh;
