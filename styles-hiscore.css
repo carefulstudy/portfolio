@@ -22,6 +22,9 @@
 	margin:auto;
 	font-size:1.5vh;
 	font-family:verdana;
+	white-space: nowrap;  
+	overflow: hidden; 
+	text-overflow: ellipsis; 
 }
 
 .ranking-row {
@@ -127,17 +130,16 @@
 	}
 
 	.ranking-row.header {
-	  background-color: #f5f5f5;
-	  font-weight: bold;
-	  background-color: #cc0000; /*red*/
+		background-color: #f5f5f5;
+		font-weight: bold;
+		background-color: #cc0000; /*red*/
 		font-size: 3vw;
 	}
 
 	.ranking-column {
-	  display: inline-block;
-	  padding: 10px;
-	  border-bottom: 1vw solid #ddd;
-	font-size: 4vw;
+		display: inline-block;
+		padding: 10px;
+		font-size: 4vw;
 	}
 
 	.links-section p {
