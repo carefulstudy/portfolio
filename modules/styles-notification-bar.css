@@ -1,11 +1,10 @@
-/* Windows 98 style notification bar */
 .win98-bar {
-    background-color: #c0c0c0; /* Classic Windows 98 gray */
-    color: #000080; /* Dark blue text */
+    background-color: #c0c0c0; 
+    color: #000080; 
     font-family: "Tahoma", sans-serif;
     font-size: 14px;
     padding: 8px;
-    border: 2px solid #808080; /* 3D border effect */
+    border: 2px solid #808080; 
     border-top-color: #ffffff;
     border-left-color: #ffffff;
     border-right-color: #404040;
@@ -19,7 +18,13 @@
     align-items: center;
 }
 
-/* Icon spacing */
 .win98-bar .icon {
     margin-right: 8px;
+}
+
+@media screen and (orientation:portrait)
+{
+	.win98-bar{
+		display:none;
+	}
 }
