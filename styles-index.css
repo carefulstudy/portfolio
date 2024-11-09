@@ -100,6 +100,7 @@
 	bottom:0%;
 	left:2%;
 	object-fit: cover; /* Maintain aspect ratio and cover the div */
+  background-size: cover; /* Maintains aspect ratio */
 }
 
 #balloon-kid-balloon-wrapper{
@@ -118,6 +119,7 @@
 	  height:87%;
 	  left:0%;
 		object-fit: cover; /* Maintain aspect ratio and cover the div */
+  background-size: cover; /* Maintains aspect ratio */
 }
 
 #balloon-txt{
