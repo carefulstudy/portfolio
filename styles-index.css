@@ -102,6 +102,11 @@
 	object-fit: cover; /* Maintain aspect ratio and cover the div */
   background-size: cover; /* Maintains aspect ratio */
 }
+#balloon-img img{
+  max-height: 100%;      /* Scale the image to fit the div's height */
+  width: auto;           /* Maintain the aspect ratio */
+  height: auto;          /* Maintain the aspect ratio */
+}
 
 #balloon-kid-balloon-wrapper{
 	position:absolute;
