@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'kenvector';
-    src: url('fonts/kenvector_future_thin2.ttf') format('truetype'), 
+    src: url('fonts/kenvector_future_thin2.ttf') format('truetype'), /* Super Modern Browsers */
     font-weight: normal;
     font-style: normal;
 	text-decoration: none; 
@@ -32,7 +32,7 @@
 
 .shadow {
 	z-index:0;
-	filter: blur(2px); 
+	filter: blur(2px); /* Blur for a softer shadow */
 	color:black; 
 	padding-left:.2vh;
 	padding-top:.2vh;
@@ -100,12 +100,6 @@
 	left:2%;
 }
 
-#balloon-kid img{
-  max-height: 100%;      
-  width: auto;          
-  height: auto;         
-}
-
 #balloon-kid-balloon-wrapper{
 	position:absolute;
 	left:22%;
@@ -121,12 +115,6 @@
 	  position: absolute;
 	  height:87%;
 	  left:0%;
-}
-
-#balloon-img img{
-  max-height: 100%;      
-  width: auto;          
-  height: auto;         
 }
 
 #balloon-txt{
