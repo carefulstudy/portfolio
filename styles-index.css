@@ -91,6 +91,7 @@
      margin: 0 auto;
 	 display:block;
 	 background-color:#2c6fb5;
+	 align-items: flex-start; 
 }
 
 #balloon-kid{
