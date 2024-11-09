@@ -61,7 +61,7 @@
 
 .ranking-row.header {
   font-weight: bold;
-  background-color: #cc0000; 
+  background-color: #cc0000; /*red*/
   color: white;
 }
 
@@ -79,7 +79,7 @@
 }
 
 .ranking-column:last-child {
-  border-right: none; 
+  border-right: none; /* Remove border on the last column */
 }
 
 .ranking-row.header .ranking-column {
@@ -109,8 +109,8 @@
 	.links-section {
 	  display: flex;
 	  justify-content: center;
-	  gap: 1vw; 
-	  margin-bottom: 1vw; 
+	  gap: 1vw; /* Spacing between links */
+	  margin-bottom: 1vw; /* Space between links-section and ranking-container */
 	}
 
 	.link {
@@ -137,7 +137,7 @@
 	.ranking-row.header {
 		background-color: #f5f5f5;
 		font-weight: bold;
-		background-color: #cc0000; 
+		background-color: #cc0000; /*red*/
 		font-size: 3vw;
 	}
 
