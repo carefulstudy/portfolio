@@ -82,6 +82,7 @@ td{width:100%;}
 	pointer-events: none;
 }
 
+.red{color:red !important;}
 .forward-graphics{z-index:2;pointer-events: none;}
 
 #landscape-wrapper{

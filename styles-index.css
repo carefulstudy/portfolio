@@ -153,9 +153,9 @@
 	z-index:1000;
 }
 
-.red{background-color:#f10e00;}
-.green{background-color:#7cc303;}
-.blue{background-color:#4d71d1;}
+.red-background{background-color:#f10e00;}
+.green-background{background-color:#7cc303;}
+.blue-background{background-color:#4d71d1;}
 
 
 .index-page-btn hover:{
