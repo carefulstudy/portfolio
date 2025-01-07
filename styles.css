@@ -272,7 +272,7 @@ header#landscape-mode #container{
 #return-to-home-page p, #return-to-home-page a{color: white;}
 .no-grid{display: block !important;}
 .large-font{font-size: 1.5vh;font-weight: bold;line-height: 2.25vh;}
-.legal{position:relative;margin:0 auto;width:55%;text-align:center;}
+.legal{position:relative;margin:0 auto;text-align:center;}
 .legal a{color:yellow;font-weight: bold;}
 .psi-freak-wrapper{margin:2vw;margin-top:1vw;}
 .manual-img-l,.manual-img-r{box-sizing:border-box;width:20vh;padding-right:1vh;}
