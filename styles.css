@@ -39,12 +39,12 @@ img{
 p{ 
 	color:#FFD700;
     font-family: Verdana, Helvetica, Arial, Geneva, sans-serif;
-    font-size: 1.15vh;
-	line-height: 1.45vh; 
+    font-size: 1.35vh;
+	line-height: 1.8vh; 
 }
 
 h1{ 
-	font-size:2.5vh;
+	font-size:3vh;
 	color:#ffa200;
 	font-family: "Liberation Mono";
 	font-style: italic;
@@ -70,6 +70,31 @@ td{width:100%;}
 /* classes */
 .p-header{color:white;font-weight: bold;}
 
+.outer-border {
+padding:2px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.inner-border {
+padding:0.5vh;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.inner-border-btm {
+margin-top:2px;
+padding:0.5vh;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+
 .background-image{
 	float:right;
 	position:fixed;
@@ -83,6 +108,7 @@ td{width:100%;}
 }
 
 .red{color:red !important;}
+.white{color:white !important;}
 .forward-graphics{z-index:2;pointer-events: none;}
 
 #landscape-wrapper{
@@ -226,7 +252,7 @@ header#landscape-mode #container{
 	color: white;
 	margin: 0;
 	font-family:verdana;
-	font-size:1.5vh;
+	font-size:2vh;
 }
 
 .table-body-left li{
@@ -281,14 +307,17 @@ header#landscape-mode #container{
 	aspect-ratio: 1 / 1;
 }
 .bullet{
-	 width: 1.1vh;  height: 1.1vh;  border-radius: 50%;margin-right: .6vh;
+	 width: 1.1vh;  
+	 height: 1.1vh;  
+	 border-radius: 50%;
+	 margin-right: .6vh;
 	border-radius: 50%;
 	border: solid red 0.3vh;
-	height:80%;
 	background-color:white;
 	margin-left:.4vh;
 	aspect-ratio: 1 / 1;
 	position:relative;
+	top:0.3vh;
 }
 
 .bullet-container{margin-top:.1vh;display: flex;flex-direction: column;}
@@ -356,7 +385,8 @@ header#landscape-mode #container{
 /**********/
 .table-row  {
 	margin:0 0 1.45vh;
-	padding-left:1%;
+	padding-left:3%;
+	padding-right:3%;
 }
 .table-data-l-txt{
 	float:left;
@@ -364,6 +394,7 @@ header#landscape-mode #container{
 	width:70%;
 	height:100%;
 	display: grid;
+	padding-right:0.5vh;
 }
 .table-data-r-txt{
 	float:right;
@@ -371,6 +402,7 @@ header#landscape-mode #container{
 	width:70%;
 	height:100%;
 	display: grid;
+	padding-left:1vh;
 }
 
 .table-data-l-img{
@@ -620,5 +652,44 @@ header#landscape-mode #container{
 	}	
 	.table-data-l-txt {
 		width: 100%;
+	}
+}
+
+@media screen and (orientation:landscape)
+{
+	.offset-n05 {
+		position:relative;
+		top :-0.5vh;
+	}
+	.offset-n1 {
+		position:relative;
+		top :-1vh;
+	}
+	.offset-n2 {
+		position:relative;
+		top :-2vh;
+	}
+
+	.offset-n2 {
+		position:relative;
+		top :-3vh;
+	}
+
+	.offset-p1 {
+		position:relative;
+		top :0.5vh;
+	}
+
+	.offset-p1 {
+		position:relative;
+		top :1vh;
+	}
+	.offset-p2 {
+		position:relative;
+		top :2vh;
+	}
+	.offset-p3 {
+		position:relative;
+		top :3vh;
 	}
 }
