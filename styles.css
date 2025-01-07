@@ -693,3 +693,33 @@ header#landscape-mode #container{
 		top :3vh;
 	}
 }
+
+.preview-image-out {
+    padding: 2px;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.preview-image-in, .preview-image-in-btm{
+	padding: 0.5vh;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	
+	width: 100%; /* Set width to 100% of its parent container */
+	max-height: 10vh; /* Ensure height cannot exceed width */
+  overflow: hidden; /* Hides content beyond the width/height */
+}
+
+.preview-image-in-btm {
+	margin-top: 2px;
+}
+
+.preview-image-in p, .preview-image-in-btm p{
+  white-space: nowrap; /* Prevents wrapping of text */
+  overflow: hidden; /* Hides content beyond the width/height */
+  text-overflow: ellipsis; /* Optionally adds "..." for clipped text */
+}
