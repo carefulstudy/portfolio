@@ -107,9 +107,12 @@
 		</div><!--table-container-->
 		
 		<footer>
-			<div class="legal">
-				<p>TM & © 2024 Robin Wåge. PSI FREAK and all related logos, names and distinctive likenesses thereof are the property of Robin Wåge. Used under license by Robin Wåge. All Rights Reserved. PsiFreak.com &copy; 2024 Robin Wåge.&nbsp;<a class="a-legal-yellow" href="privacy-policy.html">Privacy Policy</a>, <a href="serial-key-usage-policy.html">Serial Key Usage Policy</p></a>
-			</div><!--legal-->
+			<div id="footer-placeholder"></div>
+			<script>
+				$(document).ready(function() {
+					$('#footer-placeholder').load('modules/footer.html');
+				});
+			</script>
 		</footer>
 		
 	</div><!--page-wrapper-->
