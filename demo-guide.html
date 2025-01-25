@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,85 +29,54 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
+		<div class="content">
 		
-		<div class="table-container">
-		
-			<div class="table-body-left">
+			<div class="left-panel">
 			
-			
-				<div class="table-row">
-					<h2>Demo Guide</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
+				<div class="block">
+					<h2 class="page-title">Demo Guide</h2>
 					<p class="white">
 						Welcome to the world of Psi Freak! To get started, follow these simple instructions:
 					</p>
 				</div><!--table-->
 								
-				<div class="table-row">
-					<div class="table-data-r-txt">
+				<div class="block">
+					<div class="cell-r-txt">
 						<p><span class="p-header">Downloading and Installing the Game</span><br>
 						</p>
 						<p>
-To launch Psi Freak, visit our  <a href="https://rforrobin.itch.io/psi-freak">Itch.io</a> page and click the "Download" button to grab the .tar file. Once it’s downloaded, find it in your downloads folder and drag it to your desktop. Right-click the .tar file, select "Extract All" to unzip it, and open the extracted folder. Double-click the executable file inside, and you’re ready to jump into the action!
+						To launch Psi Freak, visit our  <a href="https://rforrobin.itch.io/psi-freak">Itch.io</a> page and click the "Download" button to grab the .tar file. Once it’s downloaded, find it in your downloads folder and drag it to your desktop. Right-click the .tar file, select "Extract All" to unzip it, and open the extracted folder. Double-click the executable file inside, and you’re ready to jump into the action!
 							
 							</p>
 					</div>
-					<div class="table-data-l-img">
+					<div class="cell-l-img">
 						<img src="images/psi-freak-itch-io-page.png">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
-					<div class="table-data-l-txt">
+				<div class="block">
+					<div class="cell-l-txt">
 						<p><span class="p-header">Login and Starting the Demo</span><br>
 						When you launch the game, you'll be greeted by the login screen with a security numpad. Use the arrow keys to navigate and enter "DEMO" in the serial-key field. Once entered, you’re ready to jump into the action!</b><br>
 						</p>
 					</div>
 					
-					<div class="table-data-r-img offset-n1">
+					<div class="cell-r-img offset-n1">
 						<img src="screenshots/login-as-demo-player.png">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
-					<div class="table-data-r-txt">
+				<div class="block">
+					<div class="cell-r-txt">
 						<p>
 							<span class="p-header">Customizing Your Character</span><br>
 							Next, you’ll be taken to the character creation screen. Here, you can customize your character to your liking. You will have the option to adjust:
@@ -134,24 +97,24 @@ To launch Psi Freak, visit our  <a href="https://rforrobin.itch.io/psi-freak">It
 						</p>
 					</div>
 
-					<div class="table-data-l-img offset-n05">
+					<div class="cell-l-img offset-n05">
 						<img src="screenshots/is-that-you.png">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
-					<div class="table-data-l-txt">
+				<div class="block">
+					<div class="cell-l-txt">
 						<p><span class="p-header">Meeting Professor Lennart</span><br>
 						After creating your character, you will be greeted by the renowned Professor Lennart. He will ask for your name—choose wisely, as this will be your identity in the game!
 						Once you have provided your name, Professor Lennart will welcome you to the new world of Psi Freak. Your journey is about to begin!</p>
 					</div>
 					
-					<div class="table-data-r-img">
+					<div class="cell-r-img">
 						<img src="screenshots/hi-there-buddy!.png">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div class="col-r-txt col-txt">
 						<p><span class="p-header">The Starter Town – Where Adventures Begin</span><br>
 						Welcome to <b>Budding Town</b>, where new adventures are born! Nestled in the quiet countryside, this small village feels like something out of a postcard—a place where everyone knows your name, and strange things sometimes lurk behind the everyday. The locals are friendly, but there’s an odd energy in the air, hinting that bigger things lie just beyond the horizon.
@@ -160,21 +123,21 @@ To launch Psi Freak, visit our  <a href="https://rforrobin.itch.io/psi-freak">It
 
 						Get ready, because the calm of Budding Town won't last long!</p>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to game guides.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

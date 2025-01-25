@@ -50,12 +50,10 @@
 	}
 
 	#hamburger-menu-wrapper {
-		margin-top:9vw;
 		float:right;
 		z-index:200;
 		position: absolute;
 		right:0vw;
-		top:0vw;
 	}
 
 	.hamburger-content {

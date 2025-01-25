@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,72 +29,41 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
+		<div class="content">
 		
-		<div class="table-container">
-		
-			<div class="table-body-left">
+			<div class="left-panel">
 			
-			
-			<div class="table-row">
-					<h2>Player Card Guide</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
+				<div class="block">
+					<h2 class="page-title">Player Card Guide</h2>
 					<p class="white">
 						Hey there, future legend! Ready to FREAK OUT?!
 					</p>
 				</div><!--table-->
 			
-				<div class="table-row">
-					<div class="table-data-l-txt">
+				<div class="block">
+					<div class="cell-l-txt">
 						<p><span class="p-header">Understanding Your Player Card: PSK and PUK Codes</span><br>
 						Let’s take a closer look at your Player Card. At the bottom, inside the red rectangle, you’ll find a 12-character PSK. This code serves as your unique identifier, granting you access to your account and all its features.
 
 At the top-left corner, you’ll see an 8-character PUK Code. This code is your safety net, allowing you to recover your account or reset your PIN if necessary. It is crucial to keep these codes secure.</p>
 					</div>
 					
-					<div class="table-data-r-img offset-p2">
+					<div class="cell-r-img offset-p2">
 						<img src="images/player-card-illustration.png">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
-					<div class="table-data-r-txt">
+				<div class="block">
+					<div class="cell-r-txt">
 						<p>
 							<p>1. Start up Psi Freak by double-clicking the executable file inside your Psi Freak folder. This will open up the authorization screen.<br><br></p>
 
@@ -112,13 +75,13 @@ At the top-left corner, you’ll see an 8-character PUK Code. This code is your 
 						</p>
 					</div>
 
-					<div class="table-data-l-img offset-p2">
+					<div class="cell-l-img offset-p2">
 						<img src="screenshots/enter-access-code.gif">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
-					<div class="table-data-l-txt">
+				<div class="block">
+					<div class="cell-l-txt">
 							<p>4. Now that you’ve unlocked the "Set PIN" feature, type in your new PIN. Make sure it’s secure, yet easy for you to remember.</p>
 
 							<p>5. Once your new PIN has been accepted, your Player Card is successfully set. You can now log in using your new PIN code.</p>
@@ -126,33 +89,33 @@ At the top-left corner, you’ll see an 8-character PUK Code. This code is your 
 							<p>6. For added security, make sure to keep your Player Card and PIN information in a safe place to prevent unauthorized access.</p>
 					</div>
 					
-					<div class="table-data-r-img">
+					<div class="cell-r-img">
 						<img src="screenshots/enter-new-pin.gif">
 					</div>
 				</div><!--table-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div class="col-r-txt col-txt">
 						<p><span class="p-header"><span class="red"><strong><u>!IMPORTANT:</u></strong></span> Don't lose the .PDF file!</b></span><br>
 						Your OfficialPlayerCard_1234ABCDEFGH_1234ABCD.pdf file contains a hidden, encrypted token that proves your identity and account ownership. This token is the <b>only</b> way we can verify you as the rightful account holder if your account is compromised. The PDF is the only method to recover your account, so keep it safe on a USB drive, CD, or other secure location. Do not share or email it unless asked for recovery.
 
 If your account is compromised, send the Player Card PDF in a .zip file to us. We will verify its integrity and help restore your access.</p>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to game guides.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,151 +29,117 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
+		
+		<div class="content">
+			<div class="left-panel">
+			
+				<div class="block">
+					<h2 class="page-title">
+						Latest News
+					</h2>
+					<p class="white">
+						Welcome to the Psi Freak News Page! Discover thrilling updates and helpful information right here! Click on any article to dive into its full story
+					</p>
+				</div><!--block-->
 				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
+				<div class="block-group"> 	
+					<div class="block">
+						<div class="cell-r-txt">
+							<a href="welcome-to-psi-freak.html" class="large-font">Welcome to Psi Freak! (Updated 01/07/25)</a>
+							<p>
+								Exciting times ahead! We’re breaking out of the basics and moving into new territory with fresh features and experiences. Get ready to see what’s next—it’s going to be an adventure!<
+							</p>
+						</div>
+						<div class="cell-l-img preview-image-out">
+							<div class="preview-image-in">
+								<img src="images/preview-welcome-to-psi-freak.jpg">
+							</div>
+							<div class="preview-image-in-btm">
+								<p>Welcome to Psi Freak..-- Photo © 2025</p>
+							</div>
+						</div>
+					</div><!--block-->
+				</div>
+	
+				<div class="block-group"> 	
+					<div class="block">
+						<div class="cell-r-txt">
+							<a href="guides.html" class="large-font">The Guides are Here!</a>
+							<p>
+								Explore our collection of helpful guides to get the most out of Psi Freak! Whether you're setting up your Player Card, troubleshooting your gamepad, or learning how to play the demo, we've got you covered. Visit the guides below to get started and make your adventure even smoother!
+							</div>
+							
+						<div class="cell-l-img preview-image-out">
+							<div class="preview-image-in">
+								<img src="images/preview-guides.jpg">
+							</div>
+							<div class="preview-image-in-btm">
+								<p>The guide are here!-- Photo © 2025</p>
+							</div>
+						</div>
+					</div><!--block-->
 				</div>
 				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
-		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
-		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-			
-			
-			<div class="table-row">
-				<h2>
-					Latest News
-				</h2>
-			</div><!--table-row-->
-			
-			<div class="table-row white">
-				<p class="white">
-					Welcome to the Psi Freak News Page! Discover thrilling updates and helpful information right here! Click on any article to dive into its full story
-				</p>
-			</div><!--table-row-->
-			
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="welcome-to-psi-freak.html"><span class="large-font">Welcome to Psi Freak! (Updated 01/07/25)</span><br></a>
-						Exciting times ahead! We’re breaking out of the basics and moving into new territory with fresh features and experiences. Get ready to see what’s next—it’s going to be an adventure!</p>
-					</div>
-					<div class="table-data-l-img preview-image-out">
-						<div class="preview-image-in">
-							<img src="images/preview-welcome-to-psi-freak.jpg">
-						</div>
-						<div class="preview-image-in-btm">
-							<p>Welcome to Psi Freak..<br>-- Photo © 2025</p>
-						</div>
-					</div>
-				</div><!--table-row-->
-	
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="guides.html"><span class="large-font">The guides are here!</span></a><br>
-						Explore our collection of helpful guides to get the most out of Psi Freak! Whether you're setting up your Player Card, troubleshooting your gamepad, or learning how to play the demo, we've got you covered. Visit the guides below to get started and make your adventure even smoother!
+				<div class="block-group"> 	
+					<div class="block">
+						<div class="cell-r-txt">
+							<a href="wallpapers.html" class="large-font">Get your Official Psi Freak Wallpapers!</a>
+							<p>
+								The official Psi Freak wallpapers have arrived! Customize your computer with exciting designs straight from the game. Level up your desktop with bold, vibrant backgrounds and bring the game’s energy right to your screen!
+							</p>
 						</div>
 						
-					<div class="table-data-l-img preview-image-out">
-						<div class="preview-image-in">
-							<img src="images/preview-guides.jpg">
+						
+						<div class="cell-l-img preview-image-out">
+							<div class="preview-image-in">
+								<img src="images/preview-wallpapers.jpg">
+							</div>
+							<div class="preview-image-in-btm">
+								<p>The Official Psi Freak..-- Photo © 2025</p>
+							</div>
 						</div>
-						<div class="preview-image-in-btm">
-							<p>The guide are here!<br>-- Photo © 2025</p>
-						</div>
-					</div>
-					
-				</div><!--table-row-->
-	
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="wallpapers.html"><span class="large-font">Get your Official Psi Freak Wallpapers!</span><br></a>
-						The official Psi Freak wallpapers have arrived! Customize your computer with exciting designs straight from the game. Level up your desktop with bold, vibrant backgrounds and bring the game’s energy right to your screen!</p>
-					</div>
-					
-					
-					<div class="table-data-l-img preview-image-out">
-						<div class="preview-image-in">
-							<img src="images/preview-wallpapers.jpg">
-						</div>
-						<div class="preview-image-in-btm">
-							<p>The Official Psi Freak..<br>-- Photo © 2025</p>
-						</div>
-					</div>
-					
-				</div><!--table-row-->				
-				
-
-				
-				<div class="table-row"><hr></div>
+					</div><!--block-->		
+				</div>		
 			
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="psi-freak-mmorpg.html"><span class="large-font">Psi Freak MMORPG</span></a><br>
-						Dive into Psi Freak, a 90s-inspired MMORPG where you can master psionic powers, customize your space, and care for pets. Explore an ever-evolving world, battle quirky villains, and team up with players in this exciting online adventure. Join now in Early Access!
-
-</p>
-					</div>
-					
-					<div class="table-data-l-img preview-image-out">
-						<div class="preview-image-in">
-							<img src="images/preview-psi-freak-mmorpg.jpg">
+				<div class="block-group-last-child"> 	
+					<div class="block">
+						<div class="cell-r-txt">
+							<a href="psi-freak-mmorpg.html" class="large-font">Psi Freak MMORPG</a>
+							<p>
+								Dive into Psi Freak, a 90s-inspired MMORPG where you can master psionic powers, customize your space, and care for pets. Explore an ever-evolving world, battle quirky villains, and team up with players in this exciting online adventure. Join now in Early Access!
+							</p>
 						</div>
-						<div class="preview-image-in-btm">
-							<p>Psi Freak MMORPG<br>-- Photo © 2025</p>
+						
+						<div class="cell-l-img preview-image-out">
+							<div class="preview-image-in">
+								<img src="images/preview-psi-freak-mmorpg.jpg">
+							</div>
+							<div class="preview-image-in-btm">
+								<p>Psi Freak MMORPG-- Photo © 2025</p>
+							</div>
 						</div>
-					</div>
-					
-				</div><!--table-row-->
+					</div><!--block-->
+				</div>
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
-				
-			</div><!--table-body-left-->
+				</div><!--block-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
-			
-		</div><!--table-container-->
+			</div><!--right-panel-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>
@@ -190,5 +150,5 @@
 			</script>
 		</footer>
 		
-	</div><!--page-wrapper-->
+	</div><!--page-->
 </body>

@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,135 +29,125 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
+		<div class="content">
 		
-		<div class="table-container">
-		
-			<div class="table-body-left">
+			<div class="left-panel">
 			
-				<div class="table-row">
-					<h2>Official Wallpapers</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
+				<div class="block">
+					<h2 class="page-title">Official Wallpapers</h2>
 					<p class="white">
 						Tired of the same old background? 
-					Breathe life into your screen with our exclusive, high-quality wallpapers.
+						Breathe life into your screen with our exclusive, high-quality wallpapers.
 					</p>
 				</div><!--table-->
 	
-				<div class="table-row"><hr></div>
+				<div class="block">
+					<div class="cell-r-txt">
+						<a href="downloads/Unlock-Knowledge.bmp" class="large-font">Unlock Knowledge</a>
+						<p>
+							Prepare for a wallpaper so intelligent it’ll expand your mind with every glance! This design is a fusion of cutting-edge science and discovery, turning your device into a portal of knowledge that fuels your curiosity and sparks your creativity. Let this wallpaper unlock new ideas and fill your world with the power of insight and innovation. <a href="downloads/Unlock-Knowledge.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a>
+						</p>
+					</div>
+					<div class="cell-l-img preview-image-out">
+						<div class="preview-image-in">
+							<img src="downloads/Unlock-Knowledge.bmp">
+						</div>
+						<div class="preview-image-in-btm">
+							<p>Unlock Knowledge wa..-- Photo © 2025</p>
+						</div>
+					</div>
+				</div><!--block-->
 				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="downloads/Unlock-Knowledge.bmp"><span class="large-font">Unlock Knowledge</span><br></a>
-						Prepare for a wallpaper so intelligent it’ll expand your mind with every glance! This design is a fusion of cutting-edge science and discovery, turning your device into a portal of knowledge that fuels your curiosity and sparks your creativity. Let this wallpaper unlock new ideas and fill your world with the power of insight and innovation.<br><a href="downloads/Unlock-Knowledge.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+				<div class="block">
+					<div class="cell-r-txt">
+						<a href="downloads/Cosmic-Visitor.bmp"  class="large-font">Cosmic Visitor</a>
+						<p>
+							What’s This? A strange, cheerful presence on your screen? This unexpected visitor brings a burst of cosmic energy, filling your device with a playful, otherworldly charm. Is it a sign from the stars or just a curious wanderer? Let the mystery of this cosmic touch spark your imagination and brighten your world with a little touch of the unknown. <a href="downloads/Cosmic-Visitor.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a>
+						</p>
 					</div>
-					<div class="table-data-l-img">
-						<img src="downloads/Unlock-Knowledge.bmp">
-						<p>Unlock Knowledge wa..<br>-- Photo © 2025</p>
+					<div class="cell-l-img preview-image-out">
+						<div class="preview-image-in">
+							<img src="downloads/Cosmic-Visitor.bmp">
+						</div>
+						<div class="preview-image-in-btm">
+							<p>Cosmic Visitor wallpa..-- Photo © 2025</p>
+						</div>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="downloads/Cosmic-Visitor.bmp"><span class="large-font">Cosmic Visitor</span><br></a>
-						What’s This? A strange, cheerful presence on your screen? This unexpected visitor brings a burst of cosmic energy, filling your device with a playful, otherworldly charm. Is it a sign from the stars or just a curious wanderer? Let the mystery of this cosmic touch spark your imagination and brighten your world with a little touch of the unknown.<br><a href="downloads/Cosmic-Visitor.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+				<div class="block">
+					<div class="cell-r-txt">
+						<a href="downloads/Blaze-of-Heat.bmp" class="large-font">Blaze of Heat</span></a>
+						<p>
+							Prepare for a red-hot wallpaper so intense it’ll melt your screen! This blazing design electrifies your device, turning it into a smoldering furnace that fuels your spirit daily with its HEAT PSIONIC BLAST. Let this fiery wallpaper ignite your soul and set your world ablaze! <a href="downloads/Blaze-of-Heat.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a>
+						</p>
 					</div>
-					<div class="table-data-l-img">
-						<img src="downloads/Cosmic-Visitor.bmp">
-						<p>Cosmic Visitor wallpa..<br>-- Photo © 2025</p>
-					</div>
-				</div><!--table-row-->
-				
-				<div class="table-row"><hr></div>
-			
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="downloads/Blaze-of-Heat.bmp"><span class="large-font">Blaze of Heat</span><br></a>
-						Prepare for a red-hot wallpaper so intense it’ll melt your screen! This blazing design electrifies your device, turning it into a smoldering furnace that fuels your spirit daily with its HEAT PSIONIC BLAST. Let this fiery wallpaper ignite your soul and set your world ablaze!<br><a href="downloads/Blaze-of-Heat.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					</div>
-					<div class="table-data-l-img">
+					<div class="cell-l-img preview-image-out">
+						<div class="preview-image-in">
 						<img src="downloads/Blaze-of-Heat.bmp">
-						<p>Blaze of Heat wallpaper<br>-- Photo © 2025</p>
+						</div>
+						<div class="preview-image-in-btm">
+						<p>Blaze of Heat wallpaper-- Photo © 2025</p>
+						</div>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row"><hr></div>
-			
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="downloads/Pressure-Pulse.bmp"><span class="large-font">Pressure Pulse</span></a><br>
-						Prepare for a wallpaper so intense, it’ll vibrate your screen with waves of sound and pressure! This design pulses with energy, transforming your device into a dynamic force that stirs your spirit with every glance. Let the pressure and sound invigorate your soul, filling your world with a rush of powerful energy.<br><a href="downloads/Pressure-Pulse.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+				<div class="block">
+					<div class="cell-r-txt">
+						<a href="downloads/Pressure-Pulse.bmp" class="large-font">Pressure Pulse</span></a>
+						<p>
+							Prepare for a wallpaper so intense, it’ll vibrate your screen with waves of sound and pressure! This design pulses with energy, transforming your device into a dynamic force that stirs your spirit with every glance. Let the pressure and sound invigorate your soul, filling your world with a rush of powerful energy. <a href="downloads/Pressure-Pulse.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a>
+						</p>
 					</div>
-					<div class="table-data-l-img">
+					<div class="cell-l-img preview-image-out">
+						<div class="preview-image-in">
 						<img src="downloads/Pressure-Pulse.bmp">
-						<p>Pressure Pulse wallpa..<br>-- Photo © 2025</p>
+						</div>
+						<div class="preview-image-in-btm">
+						<p>Pressure Pulse wallpa..-- Photo © 2025</p>
+						</div>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="downloads/Bubble-Rush.bmp"><span class="large-font">Bubble Rush</span></a><br>
-						Prepare for a wallpaper so soothing, it’ll surround your screen with soft, floating bubbles! This design creates a tranquil atmosphere, filling your device with a calming, bubbly embrace. Let the gentle rise of bubbles bring peace to your space and fill your world with quiet serenity.<br><a href="downloads/Bubble-Rush.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+				<div class="block">
+					<div class="cell-r-txt">
+						<a href="downloads/Bubble-Rush.bmp" class="large-font">Bubble Rush</span></a>
+						<p>
+							Prepare for a wallpaper so soothing, it’ll surround your screen with soft, floating bubbles! This design creates a tranquil atmosphere, filling your device with a calming, bubbly embrace. Let the gentle rise of bubbles bring peace to your space and fill your world with quiet serenity. <a href="downloads/Bubble-Rush.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a>
+						</p>
 					</div>
-					<div class="table-data-l-img">
-						<img src="downloads/Bubble-Rush.bmp">
-						<p>Bubble Rush wallpaper<br>-- Photo © 2025</p>
+					<div class="cell-l-img preview-image-out">
+						<div class="preview-image-in">
+							<img src="downloads/Bubble-Rush.bmp">
+						</div>
+						<div class="preview-image-in-btm">
+							<p>Bubble Rush wallpaper-- Photo © 2025</p>
+						</div>
 					</div>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="downloads.html"><p>< Return to downloads.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

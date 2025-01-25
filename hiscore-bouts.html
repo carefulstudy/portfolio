@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,70 +22,34 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
             $('#hamburger-menu-placeholder').load('modules/hamburger-menu.html');
         });
     </script>
+		
+	<div id="page">
 	
-	<div id="page-wrapper">
-	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
-		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-			
-				<div class="table-row">
-					<h2>Bouts Hiscores (Hiscores are coming—don’t miss it!)</h2>
-				</div><!--table-row-->
-				<div class="table-row">
+		<div class="content">
+			<div class="left-panel">
+				<div class="block">
+					<h2 class="page-title">Bouts Hiscores (Hiscores are coming—don’t miss it!)</h2>
+				</div><!--block-->
+				<div class="block">
 					<p>Who’s the champ of champs? See who’s taking down opponents and claiming the Psi Freak crown!</p>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row"><hr></div>
+				<div class="block"><hr></div>
 				
-				<div class="table-row">
+				<div class="block">
 					<div class="hiscore-container">
 						<div class="links-section">
 							<div class="link">
@@ -119,26 +84,26 @@
 							</script>
 						</div>				
 					</div>				
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row"><hr></div>
-				<div class="table-row">
+				<div class="block"><hr></div>
+				<div class="block">
 					<p>Please note that these <b>rankings are updated on a weekly basis</b>. Be sure to check back regularly to see how the standings evolve and who’s currently at the top. The competition is fierce, and every week brings new opportunities to climb the leaderboard and make your mark!</p>
-				</div><!--table-row-->
+				</div><!--block-->
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

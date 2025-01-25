@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,121 +29,77 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
-		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-			
-				<div class="table-row">
-					<h1>Downloads</h1>
-				</div><!--table-->
-				
-				<div class="table-row">
-					<p class="white">Hey, hero! Ready to blast off into the cosmic world of Psi Freak? You’ve hit the motherlode for all your downloads! Whether you’re snagging the game or grabbing a gamepad profile, this is your ultimate hookup. With just a click, you’ll unlock the gear to take your adventure to the next level. Get ready to battle wild creatures, team up with friends, and dominate the leaderboards. Let’s power up and get your journey started—download and dive into the action!</p>
-				</div><!--table-->
-
-				<div class="table-row">
-					<hr>
-				</div><!--table-->
-				
-				<div class="table-row">
-					<h2>Psi Freak Game</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
-					<div class="bullet-container">
+		<div class="content">
+			<div class="left-panel">
+				<div class="block-group"> 
+					<div class="block">
+						<h2 class="page-title">Downloads</h2>
+						<p class="white">Hey, hero! Ready to blast off into the cosmic world of Psi Freak? You’ve hit the motherlode for all your downloads! Whether you’re snagging the game or grabbing a gamepad profile, this is your ultimate hookup. With just a click, you’ll unlock the gear to take your adventure to the next level. Get ready to battle wild creatures, team up with friends, and dominate the leaderboards. Let’s power up and get your journey started—download and dive into the action!</p>
+					</div><!--table-->
+				</div><!--block-group-->
+				<div class="block-group"> 
+					<div class="block">
+						<h2 class="page-title">Psi Freak Game</h2>
+						<div class="bullet-container">
 						<div class="bullet-row">
 							<div class="bullet"></div>
 							<p><a href="https://rforrobin.itch.io/psifreak">Game Download</a> - Scroll down to 'Download demo'.</p>
-						</div>
+						</div><!--bullet-row-->
+						</div><!--bullet-container-->
 						<br>
 						<p><b>Note:</b> Use <a href="https://rforrobin.itch.io/psifreak/download/YbQSWmVz4Bg_vshivTAUmy1Hw4H4FciHj9RmLah6">Psi Freak Itch.io Download Key</a> to enable automatic updates.</p>
-					</div>
-				</div>
+						</div><!--block-->
+				</div><!--block-group-->
 				
-				<div class="table-row">
-					<hr>
-				</div><!--table-->
+				<div class="block-group"> 
+					<div class="block">
+						<h2 class="page-title">Gamepad Profiles:</h2>
+						<p><a href="#">Hyperkin Cadet</a></p>
+						<p><a href="#">IBuffalo</a></p>
+						<p><a href="#">NEXT SNES</a></p>
+						<p><a href="#">PS4 Controller</a></p>
+						<br>
+						<p><b>Instructions:</b></p>
+						<p>Download your gamepad profile, drop it in your game folder, and you’re ready to rock! Can’t find your controller? No worries, <a href="gamepad-troubleshooting-manual.html">we’ve got you covered!</a></p>
+					</div><!--block-->
+				</div><!--block-group-->
 				
-				<div class="table-row">
-					<h2>Gamepad Profiles:</h2>
-				</div><!--table-->
-				<div class="table-row">
-					<p><a href="#">Hyperkin Cadet</a></p>
-					<p><a href="#">IBuffalo</a></p>
-					<p><a href="#">NEXT SNES</a></p>
-					<p><a href="#">PS4 Controller</a></p>
-					<br>
-					<p><b>Instructions:</b></p>
-					<p>Download your gamepad profile, drop it in your game folder, and you’re ready to rock! Can’t find your controller? No worries, <a href="gamepad-troubleshooting-manual.html">we’ve got you covered!</a></p>
-				</div><!--table-row-->
+				<div class="block-group-last-child"> 
+					<div class="block">
+						<h2 class="page-title">Wallpapers:</h2>
+						<p>Unlock Knowledge, <a href="downloads/Unlock-Knowledge.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+						<p>Cosmic Visitor, <a href="downloads/Cosmic-Visitor.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+						<p>Blaze of Heat, <a href="downloads/Blaze-of-Heat.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+						<p>Pressure Pulse, <a href="downloads/Pressure-Pulse.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+						<p>Bubble Rush, <a href="downloads/Bubble-Rush.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
+						<br>
+						<p><b>Check 'em out!</b></p>
+						<p>Ready to transform your screen? Dive into our <a href="wallpapers.html">Official Wallpapers!</a> and give your computer a fresh new look with some electrifying designs. Customize your space with vibrant, high-energy backgrounds that will make your desktop truly pop!</p>
+					</div><!--block-->
+				</div><!--block-group-->
 				
-				<div class="table-row">
-					<hr>
-				</div><!--table-->
-				
-								<div class="table-row">
-					<h2>Wallpapers:</h2>
-				</div><!--table-->
-				<div class="table-row">
-					<p>Unlock Knowledge, <a href="downloads/Unlock-Knowledge.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					<p>Cosmic Visitor, <a href="downloads/Cosmic-Visitor.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					<p>Blaze of Heat, <a href="downloads/Blaze-of-Heat.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					<p>Pressure Pulse, <a href="downloads/Pressure-Pulse.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					<p>Bubble Rush, <a href="downloads/Bubble-Rush.bmp">16:9</a> | <a style="color: gray;" onclick="return false;">16:10</a></p>
-					<br>
-					<p><b>Check 'em out!</b></p>
-					<p>Ready to transform your screen? Dive into our <a href="wallpapers.html">Official Wallpapers!</a> and give your computer a fresh new look with some electrifying designs. Customize your space with vibrant, high-energy backgrounds that will make your desktop truly pop!</p>
-				</div><!--table-row-->
-				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

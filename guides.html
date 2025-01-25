@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,129 +29,99 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
-		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-			
-			
-			<div class="table-row">
-				<h2>
-					Game Guides
-				</h2>
-			</div><!--table-row-->
-			
-			<div class="table-row white">
-				<p class="white">
-					Welcome to the Psi Freak Guides Page! Get the tips and tricks you need to power up your adventure! Click on any guide to jump in and start exploring!
-				</p>
-			</div><!--table-row-->
-			
-				<div class="table-row"><hr></div>
+		<div class="content">
+			<div class="left-panel">
+				<div class="block">
+					<h2 class="page-title">
+						Game Guides
+					</h2>
+					<p class="white">
+						Welcome to the Psi Freak Guides Page! Get the tips and tricks you need to power up your adventure! Click on any guide to jump in and start exploring!
+					</p>
+				</div><!--block-->
 				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="demo-guide.html"><span class="large-font">Demo Guide</span></a><br>
-						Want to dive into Psi Freak? The demo guide is here to help! Just follow these easy steps—no complex setup, no waiting. Head to the downloads page to get started and jump into the action!</p>
+				<div class="block-group"> 	
+					<div class="block">
+					<div class="cell-r-txt">
+						<a href="demo-guide.html" class="large-font">Demo Guide</a>
+						<p>
+							Want to dive into Psi Freak? The demo guide is here to help! Just follow these easy steps—no complex setup, no waiting. Head to the downloads page to get started and jump into the action!
+						</p>
 					</div>
 					
-					<div class="table-data-l-img preview-image-out">
+					<div class="cell-l-img preview-image-out">
 						<div class="preview-image-in">
 							<img src="images/preview-demo-guide.jpg">
 						</div>
 						<div class="preview-image-in-btm">
-							<p>Demo Guide<br>-- Photo © 2025</p>
+							<p>Demo Guide-- Photo © 2025</p>
 						</div>
 					</div>
+					</div>
+				</div><!--block-->
 
-				</div><!--table-row-->
-			
-				<div class="table-row"><hr></div>
-				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="player-card-guide.html"><span class="large-font">Player Card Guide</span></a><br>
-						Learn about the key components of your Player Card, including the Serial and PUK Codes. Understand how these unique identifiers safeguard your account, provide secure access, and allow for recovery or PIN resets when necessary.</p>
+				<div class="block-group"> 	
+					<div class="block">
+					<div class="cell-r-txt">
+						<a href="player-card-guide.html" class="large-font">Player Card Guide</a>
+						<p>
+							Learn about the key components of your Player Card, including the Serial and PUK Codes. Understand how these unique identifiers safeguard your account, provide secure access, and allow for recovery or PIN resets when necessary.
+						</p>
 					</div>
 					
-					<div class="table-data-l-img preview-image-out">
+					<div class="cell-l-img preview-image-out">
 						<div class="preview-image-in">
 							<img src="images/preview-player-card-guide.jpg">
 						</div>
 						<div class="preview-image-in-btm">
-							<p>Player Card Guide<br>-- Photo © 2025</p>
+							<p>Player Card Guide-- Photo © 2025</p>
 						</div>
 					</div>
-					
+					</div>
 				</div><!--table-->
-				<div class="table-row"><hr></div>
 				
-				<div class="table-row">
-					<div class="table-data-r-txt">
-						<p><a href="gamepad-troubleshooting-guide.html"><span class="large-font">Gamepad Troubleshooting Guide</span></a><br>
-						Got a gamepad that’s acting up? Don’t worry! We’ll match it with the perfect profile—no remapping, no hassle. Simply follow the steps to get started, and you’ll be ready to play in no time!</p>
+				<div class="block-group-last-div"> 	
+					<div class="block">
+					<div class="cell-r-txt">
+						<a href="gamepad-troubleshooting-guide.html" class="large-font">Gamepad Troubleshooting Guide</a>
+						<p>
+							Got a gamepad that’s acting up? Don’t worry! We’ll match it with the perfect profile—no remapping, no hassle. Simply follow the steps to get started, and you’ll be ready to play in no time!
+						</p>
 					</div>
 					
-					<div class="table-data-l-img preview-image-out">
+					<div class="cell-l-img preview-image-out">
 						<div class="preview-image-in">
 							<img src="images/preview-gamepad-guide.jpg">
 						</div>
 						<div class="preview-image-in-btm">
-							<p>Gamepad Troubleshoo..<br>-- Photo © 2025</p>
+							<p>Gamepad Troubleshoo..-- Photo © 2025</p>
 						</div>
 					</div>
-					
+					</div>
 				</div><!--table-->
-
 				
-				<div class="table-row">
+				<div class="block">
 					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
+				</div><!--block-->
 				
-			</div><!--table-body-left-->
+			</div><!--left-panel-->
 			
-			<div class="table-body-right">
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>
@@ -168,5 +132,5 @@
 			</script>
 		</footer>
 		
-	</div><!--page-wrapper-->
+	</div><!--page-->
 </body>

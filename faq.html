@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,155 +29,100 @@
         });
     </script>
 		
-	<div id="page-wrapper">
+	<div id="page">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
+		<div class="content">
 		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-				<div class="table-row">
-					<h2>Psi Freak FAQs</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
-					<p class="white">
-					Got questions about Psi Freak? From understanding psionics to system requirements, we’ve got the answers you need! Explore information on gameplay, updates, and where to find more about the game. Let’s get you ready for the adventure!
-					</p>
-				</div><!--table-->
-				
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-						<p>
-						<span class="p-header">
-							What’s a Psi Freak?
-							</b>
-						</span>
-						<br>
-							A Psi Freak is someone with awesome powers called psionics! There are over 8 different types of psionics, each one controlling something rad like heat, sound, or moisture. These extraordinary folks are the heroes of the game, and they're ready to take on the world!
-						</p>
-					</div>
-				</div><!--table-row-->	
-				
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">
-					Why can't I explore beyond certain areas?
-							</b>
-						</span>
-						<br>	Some areas in Psi Freak are still locked up tight, and here’s the deal: the game was built over three years, but it’s not fully tested online yet. To keep things running smooth, we’re opening up new spots bit by bit. We want to catch any bugs and fix 'em up before we unlock more. Thanks for being patient as we build this wild world together!
-				
-					</p>
-					</div>
-				</div><!--table-row-->				
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">Is this game for kids, grown-ups, or both?
-					
-							</b>
-						</span>
-						<br>
-					Psi Freak is rated "E for Everyone," so it's perfect for players 6 and up. With fun battles featuring cool items like yo-yos and frisbees, plus the power of psionics, it’s a blast for all ages!
-					</p>
-					</div>
-				</div><!--table-row-->				
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">
-					Can I spend real money on extras?
-							</b>
-						</span>
-						<br>
-					Nope! Psi Freak is all about fairness, with no pay-to-win stuff. We want every player to enjoy the game and level up their skills, without having to buy anything extra. It’s all about having a good time and earning your way!
-					</p>
-					</div>
-				</div><!--table-row-->
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">
-					Can I play Psi Freak on other systems?
-							</b>
-						</span>
-						<br>
-					Right now, Psi Freak is only available on Windows. I’m focused on perfecting the game for Windows users, but who knows—maybe in the future, we'll expand to other platforms! For now, stick with Windows for the best experience.
-					</p>
-					</div>
-				</div><!--table-row-->
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">
-					Will Psi Freak be on Steam?
-							</b>
-						</span>
-						<br>
-						At the moment, Psi Freak is only available on itch.io. I love that itch.io lets indie devs connect directly with players like you, so we can build something special together. Maybe Steam’s in the future, but for now, itch.io is where it’s at!
-				</p>
-					</div>
-				</div><!--table-row-->
-				<div class="table-row">
-					<div class="col-r-txt col-txt">
-					<p>
-						<span class="p-header">
-					Where can I find more about Psi Freak?
-							</b>
-						</span>
-						<br>
-						To keep up with all things Psi Freak, follow <a href="https://x.com/fraindor">Robin Wåge</a> on Twitter and check out our <a href="https://www.instagram.com/psifreak/">Instagram!</a> 
-					You’ll get the latest news, behind-the-scenes peeks, and exclusive content. Don’t miss out on connecting with the Psi Freak community!
-				</p>
-					</div>
-				</div><!--table-row-->
-				
-				<div class="table-row">
-					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
-				
-			</div><!--table-body-left-->
+			<div class="left-panel">
 			
-			<div class="table-body-right">
+				<div class="block">
+					<h2 class="page-title">
+						Psi Freak FAQs
+					</h2>
+					<p class="white">
+						Got questions about Psi Freak? From understanding psionics to system requirements, we’ve got the answers you need! Explore information on gameplay, updates, and where to find more about the game. Let’s get you ready for the adventure!
+					</p>
+				</div><!--table-->
+				
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>What’s a Psi Freak?</h3>
+					<p>
+						A Psi Freak is someone with awesome powers called psionics! There are over 8 different types of psionics, each one controlling something rad like heat, sound, or moisture. These extraordinary folks are the heroes of the game, and they're ready to take on the world!
+					</p>
+					</div>
+				</div><!--block-->	
+				
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Why can't I explore beyond certain areas?</h3>
+					<p>
+						Some areas in Psi Freak are still locked up tight, and here’s the deal: the game was built over three years, but it’s not fully tested online yet. To keep things running smooth, we’re opening up new spots bit by bit. We want to catch any bugs and fix 'em up before we unlock more. Thanks for being patient as we build this wild world together!
+					</p>
+					</div>
+				</div><!--block-->				
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Is this game for kids, grown-ups, or both?</h3>
+					<p>
+						Psi Freak is rated "E for Everyone," so it's perfect for players 6 and up. With fun battles featuring cool items like yo-yos and frisbees, plus the power of psionics, it’s a blast for all ages!
+					</p>
+					</div>
+				</div><!--block-->				
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Can I spend real money on extras?</h3>
+					<p>
+						Nope! Psi Freak is all about fairness, with no pay-to-win stuff. We want every player to enjoy the game and level up their skills, without having to buy anything extra. It’s all about having a good time and earning your way!
+					</p>
+					</div>
+				</div><!--block-->
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Can I play Psi Freak on other systems?</h3>
+					<p>
+						Right now, Psi Freak is only available on Windows. I’m focused on perfecting the game for Windows users, but who knows—maybe in the future, we'll expand to other platforms! For now, stick with Windows for the best experience.
+					</p>
+					</div>
+				</div><!--block-->
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Will Psi Freak be on Steam?</h3>
+					<p>
+						At the moment, Psi Freak is only available on itch.io. I love that itch.io lets indie devs connect directly with players like you, so we can build something special together. Maybe Steam’s in the future, but for now, itch.io is where it’s at!
+					</p>
+					</div>
+				</div><!--block-->
+				<div class="block">
+					<div class="col-r-txt col-txt">
+					<h3>Where can I find more about Psi Freak?</h3>
+					<p>
+						To keep up with all things Psi Freak, follow <a href="https://x.com/fraindor">Robin Wåge</a> on Twitter and check out our <a href="https://www.instagram.com/psifreak/">Instagram!</a> 
+						You’ll get the latest news, behind-the-scenes peeks, and exclusive content. Don’t miss out on connecting with the Psi Freak community!
+					</p>
+					</div>
+				</div><!--block-->
+				
+				<div class="block">
+					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
+				</div><!--block-->
+				
+			</div><!--left-panel-->
+			
+			<div class="right-panel">
 				<div div="psi-freak-wrapper">
 					<img src="images/psi-freak-clean.gif">
 				</div>
-			</div><!--table-body-right-->
+			</div><!--right-panel-->
 			
-		</div><!--table-container-->
+		</div><!--content-->
 		
 		<footer>
 			<div id="footer-placeholder"></div>

@@ -1,228 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="styles-index.css">
-	<link rel="stylesheet" href="styles-hiscore.css">
-	<link rel="stylesheet" href="styles-site-map.css">
-	<link rel="stylesheet" href="modules/styles-hamburger-menu.css">
-	<link rel="stylesheet" href="modules/styles-notification-bar.css">
-	<script src="scripts/hamburger-menu.js"></script>
-	<script src="scripts/copy-this.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<title>The Official Psi Freak Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-index.css">
+    <link rel="stylesheet" href="styles-hiscore.css">
+    <link rel="stylesheet" href="styles-site-map.css">
+    <link rel="stylesheet" href="modules/styles-hamburger-menu.css">
+    <link rel="stylesheet" href="modules/styles-notification-bar.css">
+    <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/copy-this.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>The Official Psi Freak Website</title>
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
-	<div id="notification-bar-placeholder"></div>
+    <div id="notification-bar-placeholder"></div>
     <script>
         $(document).ready(function() {
             $('#notification-bar-placeholder').load('modules/notification-bar.html');
         });
     </script>
-	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
+    
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
             $('#hamburger-menu-placeholder').load('modules/hamburger-menu.html');
         });
     </script>
-		
-	<div id="page-wrapper">
-	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
-		
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode-->
-		
-		<div class="table-container">
-		
-			<div class="table-body-left">
-			
-				<div class="table-row">
-					<h2>Site map</h2>
-				</div><!--table-->
-				
-				<div class="table-row">
-					
-						<div class="site-map-container">
+    
+    <div id="page">
+        <div id="header-placeholder"></div>
+        <script>
+            $(document).ready(function() {
+                $('#header-placeholder').load('modules/header.html');
+            });
+        </script>
+        
+        <div class="content">
+            <div class="left-panel">
+                <div class="block">
+                    <h2 class="page-title">Site map</h2>
+                </div> <!-- block -->
+                
+                <div class="block">
+                    <div class="site-map-row">
+                        <div class="site-map-item-container">
+                            <a href="index.html" class="site-map-item-label site-map-index-label"><p>Index</p></a>
+                        </div> <!-- site-map-item-container -->
+                    </div> <!-- site-map-row -->
+                    
+                    <div class="site-map-lines-container">
+                        <div class="site-map-vertical-line"></div>
+                        <div class="site-map-horizontal-line"></div>
+                    </div> <!-- site-map-lines-container -->
 
-						<div class="site-map-row">
-							<div class="site-map-item-container">
-								<a href="index.html" class="site-map-item-label site-map-index-label"><p>Index</p></a>
-							</div>
-						</div>
-						   
-						<div class="site-map-lines-container">
-							<div class="site-map-vertical-line"></div>
-							<div class="site-map-horizontal-line"></div>
-						</div>
+                    <div class="site-map-row">
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="news.html" class="site-map-item-label"><p>News</p></a>
+                            <a href="welcome-to-psi-freak.html" class="site-map-item-page"><p>Welcome to Psi Freak!</p></a>
+                            <a href="guides.html" class="site-map-item-page"><p>The guides are here!</p></a>
+                            <a href="wallpapers.html" class="site-map-item-page"><p>Get your Official Psi Freak Wallpapers!</p></a>
+                            <a href="psi-freak-mmorpg.html" class="site-map-item-page"><p>Psi Freak MMORPG</p></a>
+                        </div> <!-- site-map-item-container -->
+                        
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="guides.html" class="site-map-item-label"><p>Guides</p></a>
+                            <a href="demo-guide.html" class="site-map-item-page"><p>Demo Guide</p></a>
+                            <a href="player-card-guide.html" class="site-map-item-page"><p>Player Card Guide</p></a>
+                            <a href="gamepad-troubleshooting-guide.html" class="site-map-item-page"><p>Gamepad Troubleshooting Guide</p></a>
+                        </div> <!-- site-map-item-container -->
+                        
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="downloads.html" class="site-map-item-label"><p>Downloads</p></a>
+                        </div> <!-- site-map-item-container -->
+                        
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="hiscore.html" class="site-map-item-label"><p>Hiscore</p></a>
+                        </div> <!-- site-map-item-container -->
+                    </div> <!-- site-map-row -->
+                    
+                    <div class="site-map-row">
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="extras.html" class="site-map-item-label"><p>Extras</p></a>
+                            <a href="hiscore.html" class="site-map-item-page"><p>Hiscore</p></a>
+                            <a href="hiscore.html" class="site-map-item-page">
+                                <div class="site-map-tree-lines-root"></div>
+                                <p>xp</p>
+                            </a>
+                            <a href="hiscore.html" class="site-map-item-page">
+                                <div class="site-map-tree-lines"></div>
+                                <p>money</p>
+                            </a>
+                            <a href="hiscore.html" class="site-map-item-page">
+                                <div class="site-map-tree-lines"></div>
+                                <p>bouts</p>
+                            </a>
+                            <a href="hiscore.html" class="site-map-item-page">
+                                <div class="site-map-tree-lines"></div>
+                                <p>trivia</p>
+                            </a>
+                            <a href="https://rforrobin.itch.io/psifreak" class="site-map-item-page"><p>Itch.io</p></a>
+                        </div> <!-- site-map-item-container -->
+                        
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="contact.html" class="site-map-item-label"><p>Contact</p></a>
+                        </div> <!-- site-map-item-container -->
+                        
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="faq.html" class="site-map-item-label"><p>FAQ</p></a>
+                        </div> <!-- site-map-item-container -->
+                    </div> <!-- site-map-row -->
 
-						<div class="site-map-row">
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="news.html" class="site-map-item-label">
-									<p>News</p>
-								</a>
-								<a href="welcome-to-psi-freak.html" class="site-map-item-page">
-									<p>Welcome to Psi Freak!</p>
-								</a>
-								<a href="guides.html" class="site-map-item-page">
-									<p>The guides are here!</p>
-								</a>
-								<a href="wallpapers.html" class="site-map-item-page">
-									<p>Get your Official Psi Freak Wallpapers!</p>
-								</a>
-								<a href="psi-freak-mmorpg.html" class="site-map-item-page">
-									<p>Psi Freak MMORPG</p>
-								</a>
-							</div>
-							
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="guides.html" class="site-map-item-label"><p>Guides</p></a>
-								<a href="demo-guide.html" class="site-map-item-page"><p>Demo Guide</p></a>
-								<a href="player-card-guide.html" class="site-map-item-page"><p>Player Card Guide</p></a>
-								<a href="gamepad-troubleshooting-guide.html" class="site-map-item-page"><p>Gamepad Troubleshooting Guide</p></a>
-							</div>
-							
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="downloads.html" class="site-map-item-label"><p>Downloads</p></a>
-							</div>
-							
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="hiscore.html" class="site-map-item-label"><p>Hiscore</p></a>
-							</div>
-						</div>
-							
-						<div class="site-map-row">
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="extras.html" class="site-map-item-label"><p>Extras</p></a>
-								<a href="hiscore.html" class="site-map-item-page"><p>Hiscore</p></a>
-								<a href="hiscore.html" class="site-map-item-page"> 
-									<div class ="site-map-tree-lines-root"></div>
-									<p>xp</p>
-								</a>
-								<a href="hiscore.html" class="site-map-item-page">
-									<div class ="site-map-tree-lines"></div>
-									<p>money</p>
-								</a>
-								<a href="hiscore.html" class="site-map-item-page">
-									<div class ="site-map-tree-lines"></div>
-									<p>bouts</p>
-								</a>
-								<a href="hiscore.html" class="site-map-item-page">
-									<div class ="site-map-tree-lines"></div>
-									<p>trivia</p>
-								</a>
-								<a href="https://rforrobin.itch.io/psifreak"  class="site-map-item-page">
-									<p>Itch.io</p>
-								</a>
-							</div>
-							
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="contact.html" class="site-map-item-label"><p>Contact</p></a>
-							</div>
-							
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="faq.html" class="site-map-item-label"><p>FAQ</p></a>
-							</div>
-						</div>
+                    <div class="site-map-row">
+                        <div class="site-map-item-container">
+                            <div class="site-map-lines-container">
+                                <div class="site-map-vertical-line"></div>
+                            </div> <!-- site-map-lines-container --> 
+                            <a href="policies.html" class="site-map-item-label"><p>Policies</p></a>
+                            <a href="serial-key-usage-policy.html" class="site-map-item-page"><p>Serial Key Usage Policy</p></a>
+                            <a href="privacy-policy.html" class="site-map-item-page"><p>Privacy Policy</p></a>
+                        </div> <!-- site-map-item-container -->
+                    </div> <!-- site-map-row -->
+                </div> <!-- block -->
+                
+                <div class="block">
+                    <div id="return-to-home-page">
+                        <a href="index.html"><p>< Return to index.</p></a>
+                    </div> 
+                </div> <!-- block -->
+                
+            </div> <!-- left-panel -->
 
-						<div class="site-map-row">
-							<div class="site-map-item-container">
-								<div class="site-map-lines-container">
-									<div class="site-map-vertical-line"></div>
-								</div> 
-								<a href="policies.html" class="site-map-item-label"><p>Policies</p></a>
-								<a href="serial-key-usage-policy.html" class="site-map-item-page"><p>Serial Key Usage Policy</p></a>
-								<a href="privacy-policy.html" class="site-map-item-page"><p>Privacy Policy</p></a>
-							</div>
-							<div class="site-map-item-container"></div>
-							<div class="site-map-item-container"></div>
-							<div class="site-map-item-container"></div>
-						</div>
-					</div><!--site-map-container-->
-					
-				</div><!--table-row-->
-				
-				<div class="table-row">
-					<div id="return-to-home-page"><a href="index.html"><p>< Return to index.</p></a></div> 
-				</div><!--table-row-->
-				
-			</div><!--table-body-left-->
-			
-			<div class="table-body-right">
-				<div div="psi-freak-wrapper">
-					<img src="images/psi-freak-clean.gif">
-				</div>
-			</div><!--table-body-right-->
-			
-		</div><!--table-container-->
-		
-		<footer>
-			<div id="footer-placeholder"></div>
-			<script>
-				$(document).ready(function() {
-					$('#footer-placeholder').load('modules/footer.html');
-				});
-			</script>
-		</footer>
-		
-	</div><!--page-wrapper-->
+            <div class="right-panel">
+                <div id="psi-freak-wrapper">
+                    <img src="images/psi-freak-clean.gif">
+                </div> <!-- psi-freak-wrapper -->
+            </div> <!-- right-panel -->
+        </div> <!-- content -->
+        
+        <footer>
+            <div id="footer-placeholder"></div>
+            <script>
+                $(document).ready(function() {
+                    $('#footer-placeholder').load('modules/footer.html');
+                });
+            </script>
+        </footer> <!-- footer -->
+    </div> <!-- page -->
 </body>
+</html>

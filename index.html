@@ -11,6 +11,7 @@
 	<script src="scripts/copy-this.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>The Official Psi Freak Website</title>
+	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -21,13 +22,6 @@
         });
     </script>
 	
-    <div id="designed-for-desktop-placeholder"></div>
-    <script>
-        $(document).ready(function() {
-            $('#designed-for-desktop-placeholder').load('modules/designed-for-desktop.html');
-        });
-    </script>
-	
     <div id="hamburger-menu-placeholder"></div>
     <script>
         $(document).ready(function() {
@@ -35,171 +29,159 @@
         });
     </script>
 		
-	<div id="page-wrapper" class="landscape-mode">
+	<div id="page" class="landscape-mode">
 	
-		<header id="landscape-mode"> 
-			<div id="container">
-				<a href="https://www.patreon.com/rforrobin" id="company-logo-wrapper">
-					<img src="images/r_for_robin.png">
-				</a>
-				
-				<div id="page-title-wrapper">
-					<a href="index.html"><h1>THE OFFICIAL PSI FREAK WEBSITE!</h1></a>
-				</div>
-				
-				<div id="nav-menu-wrapper">
-					<div id="nav-menu">
-						<a href="index.html">INDEX</a>
-						&nbsp|&nbsp 
-						<a href="site-map.html">SITE MAP</a>
-						&nbsp|&nbsp 
-						<a href="faq.html">FAQ</a>
-						&nbsp|&nbsp 
-						<a href="contact.html">CONTACT</a>
-					</div>
-				</div>
-			</div><!--header-container-->
-		</header><!--landscape-mode-->
+		<div id="header-placeholder"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder').load('modules/header.html');
+			});
+		</script>
 		
-		<div class="table-container">
-			<div id="adverts-wrapper">
-				<img class="forward-graphics" src="images/index-page-graphics.gif">
-			</div>
+		<section id="upper-section">
+			<div id="homepage-picture">
+				<img src="images/index-page-graphics.gif" alt="Homepage Graphics"/>
+			</div><!-- !homepage-picture -->
 
-			<div id="sidebar-wrapper">
-				<a href="news.html" style="text-decoration: none;">
-					<div class="index-page-btn red-background" style="">
-						<div style="margin-top:-3.4vh;">
-							<div class="index-page-btn-txt">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Latest News</div>
-							<div class="index-page-btn-txt shadow">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Latest News</div>
-						</div>
-					</div>
+			<aside id="sidebar">
+				<a href="news.html">
+					<div class="sidebar-button sidebar-red-color">
+						<span class="sidebar-button-text">Latest News</span>
+						<span class="sidebar-button-text-border">Latest News</span>
+					</div><!-- !sidebar-button.sidebar-red-color -->
 				</a>
-				
-				<a href="guides.html" style="text-decoration: none;">
-					<div class="index-page-btn green-background" style="">
-						<div style="margin-top:-2.7vh;">
-							<div class="index-page-btn-txt">Game Guides</div>
-							<div class="index-page-btn-txt shadow">Game Guides</div>
-						</div>
-					</div>
+
+				<a href="guides.html">
+					<div class="sidebar-button sidebar-green-color">
+						<span class="sidebar-button-text">Game Guides</span>
+						<span class="sidebar-button-text-border">Game Guides</span>
+					</div><!-- !sidebar-button.sidebar-green-color -->
 				</a>
-				
-				<a href="downloads.html" style="text-decoration: none;"> 
-					<div class="index-page-btn blue-background">
-						<div style="margin-top:-1.9vh;">
-							<div class="index-page-btn-txt">&nbsp &nbsp &nbsp &nbsp Downloads</div>
-							<div class="index-page-btn-txt shadow">&nbsp &nbsp &nbsp &nbsp Downloads</div>
-						</div>
-					</div>
+
+				<a href="downloads.html"> 
+					<div class="sidebar-button sidebar-blue-color">
+						<span class="sidebar-button-text">Downloads</span>
+						<span class="sidebar-button-text-border">Downloads</span>
+					</div><!-- !sidebar-button.sidebar-blue-color -->
 				</a>
-			</div>
-		</div><!--table-container-->
-	
-		<div id="index-page-thick-black-hr"></div>
-		
-		<div id="index-page-bottom-container">
-			<img class="background-image" src="images/ellipse.gif">
+			</aside><!-- !sidebar -->
 			
+			<a href="https://rforrobin.itch.io/psifreak" id="large-psi-freak-button"></a>
+		</section><!-- !upper-section -->
+
+		<section id="lower-section">
+			<img class="background-image" src="images/ellipse.gif" alt="Background Graphic"/>
+
 			<div id="balloon-kid">
-				<img src="images/balloon_girl.png">
-			</div>
-			
-			<div id="balloon-kid-balloon-wrapper">
-				<div id="balloon-img">
-					<img src="images/speech_balloon.png">
-				</div>
+				<img src="images/balloon_girl.png" alt="Balloon Kid"/>
+			</div><!-- !balloon-kid -->
 
-				<div id="balloon-txt">
-					<p>Even the tiniest spark can start a fire, just like us with our PSI CHIPS! They're small, but they unlock HUGE powers. It's like they connect our brainwaves to nature, letting us control air, heat, even other people’s minds! And the best part? All it takes is focus and a bit of fun.<br>
-					Time to mix up some science, control the elements, and stop those bad guys! Let's play!</p>
-				</div>
-			</div>
+			<div id="balloon-box">
+				<span id="balloon-image-box">
+					<img src="images/speech_balloon.png" alt="Speech Balloon"/>
+				</span><!-- !balloon-image-box -->
+				<div id="balloon-paragraph-box">
+					<p>
+						Whoa, check this out! My PSI CHIP is tiny, but it´s packed with awesome! I can whip up wind, crank up heat, or maybe even read your mind!
+					</p>
+					<p>
+						It's not just science-it´s next-level freaky.<br/>
+						A little focus, a lot of fun, and I´m ready to take down bad guys and save the day.
+					</p>
+					<p>
+						So, you in? <a href="https://rforrobin.itch.io/psifreak" class="orange">Let´s play!</a>
+					</p>
+				</div><!-- !balloon-paragraph-box -->
+			</div><!-- !balloon-box -->
+
+			<div id="cool-buttons">
+				<a href="https://robinwage.itch.io/psifreak" class="cool-button">
+					<img src="images/itch_io_btn.png" alt="Play on Itch.io"/>
+				</a>
+				<a href="hiscore.html" class="cool-button">
+					<img src="images/hiscore_btn.png" alt="View High Scores"/>
+				</a>
+			</div><!-- !cool-buttons -->
+		</section><!-- !lower-section -->
+
+		<footer>
+			<div id="footer-placeholder"></div><!-- !footer-placeholder -->
+			<script>
+				$(document).ready(function() {
+					$('#footer-placeholder').load('modules/footer.html');
+				});
+			</script>
+		</footer><!-- !footer -->
+	</div><!-- !page.landscape-mode -->
+
+	<div id="page" class="portrait-mode">
+		<div id="header-placeholder-p"></div>
+		<script>
+			$(document).ready(function() {
+				$('#header-placeholder-p').load('modules/header.html');
+			});
+		</script>
+		
+		<section id="upper-section">
+			<div id="homepage-picture">
+					<img src="images/phone-btns.gif">
+			</div><!-- !homepage-picture -->
+
+			<aside id="sidebar">
+				<a href="news.html">
+					<div class="sidebar-button sidebar-red-color">
+						<span class="sidebar-button-text">Latest News</span>
+						<span class="sidebar-button-text-border">Latest News</span>
+					</div><!-- !sidebar-button.sidebar-red-color -->
+				</a>
+
+				<a href="guides.html">
+					<div class="sidebar-button sidebar-green-color">
+						<span class="sidebar-button-text">Game Guides</span>
+						<span class="sidebar-button-text-border">Game Guides</span>
+					</div><!-- !sidebar-button.sidebar-green-color -->
+				</a>
+
+				<a href="downloads.html"> 
+					<div class="sidebar-button sidebar-blue-color">
+						<span class="sidebar-button-text">Downloads</span>
+						<span class="sidebar-button-text-border">Downloads</span>
+					</div><!-- !sidebar-button.sidebar-blue-color -->
+				</a>
+			</aside><!-- !sidebar -->
 			
-			<div id="cool-btns-wrapper">
-				<div class="cool-btn">
-					<a href ="https://robinwage.itch.io/psifreak">
-						<img src="images/itch_io_btn.png">
+			<a href="https://rforrobin.itch.io/psifreak" id="large-psi-freak-button"></a>
+		</section><!-- !upper-section -->
+
+		<section id="lower-section">
+		
+			<div id="speech-balloon">
+				<p>
+					Welcome to Psi Freak's Website, Mobile User!
+					Get ready to embark on a wild, action-packed adventure in Psi Freak—the PC game where strategy meets heart-pounding battles! Journey through a world filled with psychic powers, unexpected challenges, and the thrill of pushing yourself to the limit. Ready to step into the ring? Click below to grab your copy on itch.io, and let the adventure begin!
+				</p>
+			</div>
+		
+			<div id="cool-buttons">
+				<div class="cool-buttons">
+					<a href="https://robinwage.itch.io/psifreak">
+							<img src="images/itch_io_btn.png">
 					</a>
 				</div>
-				<div class="cool-btn">
-					<a href ="hiscore.html">
+				<div class="cool-buttons">
+					<a href="hiscore.html">
 						<img src="images/hiscore_btn.png">
 					</a>
 				</div>
-			</div><!--cool-btns-wrapper-->
-		</div><!--index-page-bottom-container-->
+			</div><!--cool-buttonss-wrapper-->
+		</section><!--upper-section-->
 		<footer>
-			<div id="footer-placeholder"></div>
+			<div id="footer-placeholder-portrait"></div>
 			<script>
 				$(document).ready(function() {
-					$('#footer-placeholder').load('modules/footer.html');
+					$('#footer-placeholder-portrait').load('modules/footer.html');
 				});
 			</script>
 		</footer>
-	</div><!--page-wrapper-->
-
-	
-	<div id="page-wrapper" class="portrait-mode">
-		<header id="portrait-mode">
-			<div id="company-logo-wrapper">
-				<a href="https://www.patreon.com/rforrobin"><img src="images/r_for_robin.png"></a>
-			</div>
-			<div id="page-title-wrapper">
-				<a href="index.html"><h1>THE OFFICIAL<br>PSI FREAK WEBSITE!</h1></a>
-			</div>
-			<div id="hamburger-placeholder"></div>
-		</header><!--portrait-mode--><!---->
-		
-		<div id="content-wrapper">
-			<div id="content">
-				<div id ="index-page-portrait-btns-img">
-					<img src="images/phone-btns.gif">
-				</div>
-				
-				<div id="colors-btn-wrapper">
-					<a href="news.html">
-						<div class="index-page-btn red-background">
-							<div class="index-page-btn-txt" style="margin-top:-4.0vw;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Latest News</div>
-							<div class="index-page-btn-txt shadow" style="margin-top:-4.0vw;">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Latest News</div>
-						</div>
-					</a>
-					<a href="manuals.html"> 
-						<div class="index-page-btn green-background">
-							<div class="index-page-btn-txt" style="margin-top:-4vw;">Game Manuals &nbsp &nbsp</div>
-							<div class="index-page-btn-txt shadow" style="margin-top:-4vw;">Game Manuals &nbsp &nbsp</div>
-						</div>
-					</a>
-					<a href="downloads.html"> 
-						<div class="index-page-btn blue-background">
-							<div class="index-page-btn-txt" style="margin-top:-4vw;">&nbsp &nbsp &nbsp &nbsp &nbsp Downloads</div>
-							<div class="index-page-btn-txt shadow" style="margin-top:-4vw;">&nbsp &nbsp &nbsp &nbsp &nbsp Downloads</div>
-						</div>
-					</a>
-				</div><!--colors-btn-wrapper-->
-
-				<div id="cool-btns-wrapper">
-					<div class="cool-btn-top">
-						<a href="https://robinwage.itch.io/psifreak">
-								<img src="images/itch_io_btn.png">
-						</a>
-					</div>
-					<div class="cool-btn-bottom">
-						<a href="hiscore.html">
-							<img src="images/hiscore_btn.png">
-						</a>
-					</div>
-				</div><!--cool-btns-wrapper-->
-			</div><!--content-->
-		</div><!--content-wrapper-->
-	
-		<footer>
-			<div id="footer-placeholder"></div>
-			<script>
-				$(document).ready(function() {
-					$('#footer-placeholder').load('modules/footer.html');
-				});
-			</script>
-		</footer>
-	</div><!--index-page-wrapper-portrait-->
+	</div><!--page.portrait-mode-->
 </body>
