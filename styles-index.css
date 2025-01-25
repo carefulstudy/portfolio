@@ -150,7 +150,7 @@
 #balloon-paragraph-box p{
 	margin-bottom:1vh;
 	position:relative;
-	top:1vh;
+	top:.25vh;
 	left:7vh;
 }
 
